@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DSASSIGNMENT2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "target1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target1-Debug-27d80dcb03d73e9324f6.json",
+					"name" : "target1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "target2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target2-Debug-f79fe084487288623f9f.json",
+					"name" : "target2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "target3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target3-Debug-6c715efc3f8f3658dbed.json",
+					"name" : "target3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "target4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target4-Debug-b8698b162510dcd65c60.json",
+					"name" : "target4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "target5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target5-Debug-268c116f0a86be781617.json",
+					"name" : "target5",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2 (copy)/cmake-build-debug",
+		"source" : "/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2 (copy)"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

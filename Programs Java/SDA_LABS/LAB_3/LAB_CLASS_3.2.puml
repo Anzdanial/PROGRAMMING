@@ -1,0 +1,34 @@
+@startuml
+
+Passenger "1"--"1" Button : presses
+Passenger "1"-"1" Elevator : uses
+
+class Passenger{
+    - elevator : Elevator
+    - button : Button
+    - floorNum : int
+    - departureFloor : int
+    - arrivalFloor : int
+    + callElevator() : void
+    + selectDestinationFloor() : void
+}
+
+class Button{
+    - buttonLight : boolean
+    + turnLightOn() : void
+    + turnLightOff() : void
+}
+
+class Elevator{
+    - elevatorDoorState : boolean
+    - movingState : boolean
+    - inElevatorState : boolean
+    + openElevatorDoor() : void
+    + closeElevatorDoor() : void
+    + moveElevator() : void
+    + stopElevator() : void
+    + inElevator() : void
+    + outElevator() : void
+}
+
+@enduml

@@ -1,0 +1,55 @@
+import javax.sound.midi.SysexMessage;
+
+interface Bird{
+    void fly();
+    void makeSound();
+}
+
+class Sparrow implements Bird{
+    public void fly(){
+        System.out.println("Flying.");
+    }
+    public void makeSound(){
+        System.out.println("Chirp Chirp.");
+    }
+}
+
+interface ToyDuck{
+    void Squeak();
+}
+
+class PlasticToyDuck implements ToyDuck{
+    public void Squeak(){
+        System.out.println("Squeaks");
+    }
+}
+
+class BirdAdapter implements ToyDuck{
+    Bird bird;
+    public BirdAdapter(Bird changeBird){
+        bird = changeBird;
+    }
+    public void Squeak(){
+        bird.makeSound();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ToyDuck t1 = new PlasticToyDuck();
+        Bird B1 = new Sparrow();
+
+        System.out.println("Sparrow:");
+        B1.makeSound();
+        B1.fly();
+
+        System.out.println("ToyDuck:");
+        t1.Squeak();
+
+        System.out.println("ToyDuck:");
+        ToyDuck t2 = new BirdAdapter(B1);
+        t2.Squeak();
+    }
+}
+
+//client is toyduck & adaptee is Bird

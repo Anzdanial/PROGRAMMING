@@ -1,0 +1,6 @@
+Name			Weights		Directed
+Kruskal		+/-				Un
+Prims			+/-				Un
+Dijkstra	+					Both
+DFS				1					Both
+BFS				1					Both

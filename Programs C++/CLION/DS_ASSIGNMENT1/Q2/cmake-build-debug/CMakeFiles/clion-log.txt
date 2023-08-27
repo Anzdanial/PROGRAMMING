@@ -1,0 +1,4 @@
+/app/extra/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/app/extra/clion/bin/ninja/linux/ninja -G Ninja -S /home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT1/Q2 -B /home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT1/Q2/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT1/Q2/cmake-build-debug

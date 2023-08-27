@@ -1,0 +1,7 @@
+/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2/cmake-build-debug/CMakeFiles/target1.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2/cmake-build-debug/CMakeFiles/target2.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2/cmake-build-debug/CMakeFiles/target3.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2/cmake-build-debug/CMakeFiles/target4.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2/cmake-build-debug/CMakeFiles/target5.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DSASSIGNMENT2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

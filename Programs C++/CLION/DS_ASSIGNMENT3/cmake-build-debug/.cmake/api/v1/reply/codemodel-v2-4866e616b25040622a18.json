@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DS_ASSIGNMENT3",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "target1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target1-Debug-6fa6bb0892742673640a.json",
+					"name" : "target1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "target2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target2-Debug-a52c45508c3fe390dd9b.json",
+					"name" : "target2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT3/cmake-build-debug",
+		"source" : "/home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

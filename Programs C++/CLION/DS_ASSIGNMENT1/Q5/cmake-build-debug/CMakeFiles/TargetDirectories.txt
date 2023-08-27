@@ -1,0 +1,3 @@
+/home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT1/Q5/cmake-build-debug/CMakeFiles/Q5.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT1/Q5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT1/Q5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

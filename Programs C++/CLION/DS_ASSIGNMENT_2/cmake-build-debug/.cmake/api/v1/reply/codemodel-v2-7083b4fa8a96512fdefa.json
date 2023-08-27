@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DS_ASSIGNMENT_2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "target_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target_1-Debug-ee010bb500655d5ba2ab.json",
+					"name" : "target_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "target_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target_2-Debug-5e97da7238b59ff7d9cf.json",
+					"name" : "target_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "target_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target_3-Debug-7eeb9c21e64013b4354b.json",
+					"name" : "target_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "target_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-target_4-Debug-961b2a01688008254661.json",
+					"name" : "target_4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT_2/cmake-build-debug",
+		"source" : "/home/anzdanialpop/PROGRAMS_C++/CLION/DS_ASSIGNMENT_2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

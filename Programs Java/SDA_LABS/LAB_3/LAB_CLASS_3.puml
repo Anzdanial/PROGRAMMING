@@ -1,0 +1,54 @@
+@startuml
+
+User "1" --- "1" Cart : uses
+Cart "1" --- "1" Checkout : directs
+
+class User{
+    - username : String
+    - password : String
+    - cart : Cart
+    + login(username : String, password : String) : bool
+    + getCart() : Cart
+    + getUsername() : String
+    + getPassword() : String
+}
+
+class Cart{
+   - products : Vector <Product>activate User
+   - checkoutInstance : Checkout
+   - loginStatus : boolean
+   + checkLoginStatus() : boolean
+   + addProductCart (productName : String, quantity : int) : void
+   + removeProductCart (productName : String, quantity : int) : bool
+   + setLoginStatus(status) : void
+   + cartCheckout (checkoutProducts : Vector <Product>, loginStat : boolean) : void
+}
+
+
+class Checkout{
+    - selectedPaymentMethod : PaymentMethod
+    - loginConfirmation : boolean
+    - orderConfirmation : boolean
+    - paymentConfirmation : boolean
+    + enterShipInfo(country : String, city : String, address1 : String, address2 : String) : void
+    + selectPayMethod(selection : PaymentMethod) : void
+    + confirmOrder() : void
+    + processPayment() : void
+    + setLoginStatus(boolean status) : void
+    + getLoginStatus() : boolean
+}
+
+
+class Product{
+    + productName : String
+    + quantity : int
+}
+
+enum PaymentMethod{
+    COD
+    CardPayment
+    Paypal
+}
+
+
+@enduml

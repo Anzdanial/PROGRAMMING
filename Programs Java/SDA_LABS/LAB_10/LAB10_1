@@ -1,0 +1,88 @@
+import java.util.Scanner;
+interface vehicle{
+    void accelerate();
+    void brake();
+    void steer();
+}
+
+class Bus implements vehicle{
+    public void accelerate(){
+        System.out.println("Bus accelerates.");
+    }
+    public void brake(){
+        System.out.println("Bus brakes.");
+    }
+    public void steer(){
+        System.out.println("Bus Steers.");
+    }
+}
+
+class Truck implements vehicle{
+    public void accelerate(){
+        System.out.println("Truck accelerates.");
+    }
+    public void brake(){
+        System.out.println("Truck brakes.");
+    }
+    public void steer(){
+        System.out.println("Truck Steers.");
+    }
+}
+
+class Car implements vehicle{
+    public void accelerate(){
+        System.out.println("Car accelerates.");
+    }
+    public void brake(){
+        System.out.println("Car brakes.");
+    }
+    public void steer(){
+        System.out.println("Car Steers.");
+    }
+}
+abstract class vehicleFactory{
+    public abstract vehicle createVehicle();
+}
+
+class TruckFactory extends vehicleFactory{
+    public vehicle createVehicle(){
+        return new Truck();
+    }
+}
+
+class CarFactory extends vehicleFactory{
+    public vehicle createVehicle(){
+        return new Car();
+    }
+}
+
+class BusFactory extends vehicleFactory{
+    public vehicle createVehicle(){
+        return new Bus();
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        vehicleFactory package1;
+        Scanner userInput = new Scanner(System.in);
+        if(userInput.nextLine().equalsIgnoreCase("Truck")) {
+            package1 = new TruckFactory();
+            vehicle vehicle = package1.createVehicle();
+            vehicle.accelerate();
+            vehicle.steer();
+            vehicle.brake();
+        }
+        else if(userInput.nextLine().equals("Car")) {
+            package1 = new CarFactory();
+        }
+        else if (userInput.nextLine().equals("Bus")) {
+            package1 = new BusFactory();
+        }
+        else {
+            System.out.println("Invalid vehicle type.");
+        }
+    }
+}

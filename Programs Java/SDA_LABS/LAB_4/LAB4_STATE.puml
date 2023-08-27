@@ -1,0 +1,21 @@
+@startuml
+
+[*]-->ATMMachine
+
+state ATMMachine{
+    [*]-->TurnedOff
+    TurnedOff-->TurnedOn : PowerSupplyOn
+    TurnedOn-->SelfTest : StartupAction
+    SelfTest-->Idle : Inactivity [Successful Test Completion]
+    SelfTest-->OutOfService : Malfunction [Unsuccessful Test Completion]
+
+    Idle-->ServingCustomer
+    ServingCustomer : readCard()
+    ServingCustomer--->Idle : CancelledTransaction
+    state ATMCardReader{
+        CardIn-->Idle
+        Idle --> CardOut
+    }
+
+}
+@enduml

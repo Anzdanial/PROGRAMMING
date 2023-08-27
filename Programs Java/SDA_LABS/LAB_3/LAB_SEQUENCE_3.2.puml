@@ -1,0 +1,39 @@
+@startuml
+
+participant Passenger
+participant Elevator
+participant Button
+
+Passenger->Elevator : callElevator()
+activate Passenger
+activate Elevator
+Elevator->Button : turnLightOn()
+activate Button
+Button-->Elevator
+deactivate Button
+Elevator->Elevator : openElevatorDoor()
+Elevator-->Elevator
+Elevator->Elevator : inElevator()
+Elevator-->Elevator
+Elevator->Elevator : selectDestinationFloor()
+activate Elevator
+Elevator->Elevator : closeElevatorDoor()
+Elevator-->Elevator
+Elevator->Elevator : closeElevatorDoor()
+Elevator-->Elevator
+Elevator->Elevator : moveElevator()
+Elevator-->Elevator
+Elevator->Elevator : stopElevator()
+Elevator-->Elevator
+Elevator->Elevator : outElevator()
+Elevator-->Elevator
+Elevator->Button : turnLightOff()
+activate Button
+Button-->Elevator
+deactivate Button
+Elevator-->Elevator
+deactivate Elevator
+Elevator-->Passenger
+deactivate Elevator
+deactivate Passenger
+@enduml

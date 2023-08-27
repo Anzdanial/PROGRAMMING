@@ -1,0 +1,46 @@
+@startuml
+
+StakeHolder<|--Customer
+StakeHolder<|--Admin
+StakeHolder<|--CarVendor
+abstract class StakeHolder{
+    - firstName : String
+    - lastName : String
+    - email : String
+    - phoneNumber: String
+    - userID : String
+    - password : String
+    + signUp(firstName : String, lastName : String, email : String, phoneNumber : String) : String
+    + forgotPassword(passKey : String) : void
+    + updateProfile(userID : String) : void
+}
+
+class Customer{
+    + viewCars() : void
+    + bookCars(initialPayment : int) : void
+}
+
+
+class Admin{
+    + createUser() : String
+    + addUser(userID : String): void
+    + deleteUser(userID : String): void
+    + approveBookingRequest(bookingID : String) : void
+    + disapproveBookingRequest(bookingID : String): void
+}
+
+class CarVendor{
+   - type : TypeCarVendor
+   + uploadDocuments() : void
+   + trackLiveLocation(carNumber : String) : void
+   + approveBookingRequest(bookingID : String) : void
+   + disapproveBookingRequest(bookingID : String): void
+}
+
+
+enum TypeCarVendor{
+    Local
+    Imported
+}
+
+@enduml

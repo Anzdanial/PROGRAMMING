@@ -1,0 +1,4 @@
+/home/anzdanialpop/PROGRAMS_C++/CLION/DS_LAB/DS_LAB_10_2/cmake-build-debug/CMakeFiles/target1.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DS_LAB/DS_LAB_10_2/cmake-build-debug/CMakeFiles/target2.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DS_LAB/DS_LAB_10_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/DS_LAB/DS_LAB_10_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

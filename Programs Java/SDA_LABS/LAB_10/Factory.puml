@@ -1,0 +1,50 @@
+@startuml
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+interface vehicle {
++ void accelerate()
++ brake() : void
++ steer() : void
+}
+class Bus {
++ void accelerate()
++ void brake()
++ void steer()
+}
+class Truck {
++ void accelerate()
++ void brake()
++ void steer()
+}
+class Car {
++ void accelerate()
++ void brake()
++ void steer()
+}
+abstract class vehicleFactory {
++ {abstract}vehicle createVehicle()
+}
+class TruckFactory {
++ createVehicle(): vehicle
+}
+class CarFactory {
++ vehicle createVehicle()
+}
+class BusFactory {
++ vehicle createVehicle()
+}
+
+
+
+vehicle <|.. Bus
+vehicle <|.. Truck
+vehicle <|.. Car
+vehicleFactory <|-- TruckFactory
+vehicleFactory <|-- CarFactory
+vehicleFactory <|-- BusFactory
+Truck---TruckFactory
+Car--CarFactory
+Bus---BusFactory
+@enduml

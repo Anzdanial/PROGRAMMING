@@ -1,0 +1,58 @@
+@startuml
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+"Library System" o-- "Items"
+"Library System" o- "Members"
+package "Library System"{
+    class Library{
+        - books : Vector <Book*>
+        - magazines : Vector <Magazine*>
+        - dvds : Vector <DVD*>
+        - checkedOutItems : Vector <Item*>
+        - reservations : Vector <Member*>
+    }
+}
+
+package Items{
+Library o-- Item
+Item <|-- Book
+Item <|-- Magazine
+Item <|-- DVD
+
+    class Item{
+        - title : String
+        - uniqueIdentifier : String
+        - dueDate : Date
+    }
+
+    class Book{
+    }
+
+    class Magazine{
+
+    }
+
+    class DVD{
+
+    }
+}
+
+package Members{
+Library o-- Member
+    class Member{
+        - name : String
+        - libCardNum : int
+        - listItems : Vector <Item*>
+        - reserveItems : Vector <Items*>
+
+    }
+}
+
+
+
+
+
+
+@enduml

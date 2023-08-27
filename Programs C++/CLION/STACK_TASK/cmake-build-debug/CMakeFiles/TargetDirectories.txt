@@ -1,0 +1,3 @@
+/home/anzdanialpop/PROGRAMS_C++/CLION/STACK_TASK/cmake-build-debug/CMakeFiles/STACK_TASK.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/STACK_TASK/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anzdanialpop/PROGRAMS_C++/CLION/STACK_TASK/cmake-build-debug/CMakeFiles/rebuild_cache.dir

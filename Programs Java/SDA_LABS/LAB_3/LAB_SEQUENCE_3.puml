@@ -1,0 +1,54 @@
+@startuml
+
+participant User
+participant Cart
+participant Checkout
+participant Repository
+
+User->Repository : getUsername()
+activate User
+activate Repository
+Repository-->User : username
+deactivate Repository
+User->Repository : getPassword()
+activate Repository
+Repository-->User : password
+deactivate Repository
+User->User : login(enteredUsername, enteredPassword)
+User-->User : status
+User->Cart : setLoginStatus(status)
+activate Cart
+Cart-->User
+deactivate Cart
+User->User : getCart()
+User-->User : cartID
+User->Cart : addProductCart(productName, quantity)
+activate Cart
+Cart->Cart : checkLoginStatus()
+Cart-->Cart : confirmation
+Cart-->User
+deactivate Cart
+User->Cart : removeProductCart(productName, quantity)
+activate Cart
+Cart->Cart : checkLoginStatus()
+Cart-->Cart : confirmation
+Cart-->User
+deactivate Cart
+Cart->Checkout : cartCheckout(checkoutProducts, loginStat)
+activate Cart
+activate Checkout
+Checkout->Checkout : setLoginStatus(loginStat)
+Checkout-->Checkout
+Checkout->Checkout : enterShipInfo(country, city, address1, address2)
+Checkout-->Checkout
+Checkout->Checkout : selectPayMethod(selection)
+Checkout-->Checkout
+Checkout->Checkout : processPayment()
+Checkout-->Checkout
+Checkout->Checkout : confirmOrder()
+Checkout-->Checkout
+Checkout-->Cart
+deactivate Checkout
+deactivate Cart
+
+@enduml
