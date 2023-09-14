@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
-class test <T extends Number>{
-    T num1;
-    T num2;
-    public T Locker(){
-        return num1+num2;
+class test <T>{
+    public <T extends Number> T add(T num1, T num2) {
+        return num1 + num2; // This will work because T is guaranteed to be a Number.
     }
 }
 
