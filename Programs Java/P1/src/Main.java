@@ -1,17 +1,22 @@
 import java.util.Scanner;
+
+class test <T extends Number>{
+    T num1;
+    T num2;
+    public T Locker(){
+        return num1+num2;
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
-        int n;
-        System.out.println("Enter the length of the array: ");
         Scanner input = new Scanner(System.in);
-        n = input.nextInt();
-        int []array = new int [n];
-        for(int i = 0; i < 10; i++) {
-            input = new Scanner(System.in);
-            array[i] = input.nextInt();
+        int readNumber = -1;
+        try {
+            readNumber = Integer.parseInt(input.nextLine());
         }
-        for(int i = 0; i < 10; i++) {
-            System.out.print
+        catch(Exception e){
+            System.out.println("");
         }
     }
 }
