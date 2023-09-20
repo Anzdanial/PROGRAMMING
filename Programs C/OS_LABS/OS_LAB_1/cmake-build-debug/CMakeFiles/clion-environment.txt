@@ -1,3 +1,4 @@
-ToolSet: 1.0 (local)Options: 
+ToolSet: w64 11.0 (local)@C:\Users\anzda\AppData\Local\Programs\CLion\bin\mingw
+Options: 
 
-Options:-DCMAKE_MAKE_PROGRAM=/app/extra/clion/bin/ninja/linux/x64/ninja
+Options:
