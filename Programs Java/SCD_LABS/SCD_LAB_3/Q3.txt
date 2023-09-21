@@ -1,0 +1,66 @@
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.FileReader;
+
+public class Main{
+    public static void Decryptor(){
+        char[] array = new char[100];
+        int characterRead = 0;
+        try {
+            FileReader input = new FileReader("output.txt");
+            characterRead = input.read(array);
+            input.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        int val;
+        for(int i = 0; i < array.length; i++){
+            val = (int)array[i];
+            val = val-2;
+            array[i] = (char)val;
+        }
+        int length = array.length;
+        System.out.print("Decrypted String: ");
+        for(int i = 0; i < characterRead; i++){
+            System.out.print(array[i]);
+        }
+        System.out.println();
+    }
+
+
+    public static void Encryptor(String entry){
+        char []ch = entry.toCharArray();
+        int val;
+        for(int i = 0; i < ch.length; i++){
+            val = (int)ch[i];
+            val = val+2;
+            ch[i] = (char)val;
+        }
+
+        System.out.print("Encrypted String: ");
+        for(int i = 0; i < ch.length; i++){
+            System.out.print(ch[i]);
+        }
+        System.out.println();
+        try {
+            FileWriter output = new FileWriter("output.txt");
+            output.write(ch);
+            output.close();
+        }
+        catch (Exception e) {
+            e.getStackTrace();
+        }
+    }
+
+    public static void main(String []args){
+        System.out.println("Enter the Phrase to Encrypt: ");
+        Scanner input = new Scanner(System.in);
+        String userstring = input.nextLine();
+        Encryptor(userstring);
+        Decryptor();
+    }
+}

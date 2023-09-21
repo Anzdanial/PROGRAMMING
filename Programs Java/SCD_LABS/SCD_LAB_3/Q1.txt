@@ -1,0 +1,76 @@
+class LinkedList <T>{
+    private Node head;
+    private Node tail;
+    class Node{
+        private T data;
+        private Node next;
+        Node(){
+            data = null;
+            next = null;
+        }
+        Node(T stuff){
+            data = stuff;
+            next = null;
+        }
+    }
+    LinkedList(){
+        head = tail = null;
+    }
+
+    public void delete(T data){
+        Node curr, prev = head;
+        for(curr = head; curr.data != data; curr = curr.next){
+            if(curr != head)
+                prev = curr;
+        }
+        if(curr == head)
+            head = curr.next;
+        else if(curr == tail)
+            tail = prev;
+        else {
+            prev.next = curr.next;
+        }
+    }
+    public void insertAtBeginning(T data){
+        if(head == null) {
+            Node node = new Node(data);
+            head = tail = node;
+        }
+        else{
+            Node newNode = new Node(data);
+            newNode.next = head;
+            head = newNode;
+        }
+    }
+    public void insertAtEnd(T data){
+        if(head == null){
+            Node node = new Node(data);
+            head = tail = node;
+        }
+        else{
+            Node temp = tail;
+            Node newNode = new Node(data);
+            temp.next = newNode;
+            tail = newNode;
+        }
+    }
+    public void printList(){
+        for(Node temp = head; temp != tail; temp = temp.next){
+            System.out.print(temp.data + "->");
+        }
+        System.out.println(tail.data);
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+    LinkedList<Integer> linkedList1 = new LinkedList<>();
+    linkedList1.insertAtBeginning(1);
+    linkedList1.insertAtEnd(3);
+    linkedList1.insertAtBeginning(0);
+    linkedList1.insertAtEnd(5);
+    linkedList1.delete(5);
+    linkedList1.printList();
+    }
+}

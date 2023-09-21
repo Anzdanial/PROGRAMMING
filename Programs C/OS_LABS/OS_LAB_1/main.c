@@ -68,7 +68,7 @@ int main(int argc, char **argv) {
 
 
 //Question #2
-/*
+
 #include <stdio.h>
 int main(int argc, char **argv) {
     printf("Welcome to BS-SE Lab \n");
@@ -79,4 +79,4 @@ int main(int argc, char **argv) {
     printf("\n");
     return 0;
 }
-*/
+
