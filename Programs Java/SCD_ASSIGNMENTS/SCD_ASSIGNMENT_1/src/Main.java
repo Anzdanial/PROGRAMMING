@@ -33,12 +33,13 @@ class TaskAllocation{
         } catch(Exception e) {
         e.getStackTrace();
     }
-
-        for(int i = 0; i < characterRead; i++){
-            System.out.print(array[i]);
-            System.out.println(i);
-        }
-        System.out.println();
+        char []arraynew = new char[characterRead];
+        for(int i = 0; i < characterRead; i++)
+            arraynew[i] = array[i];
+        String inputString =  new String(arraynew);
+        String [] result = inputString.split("\n");
+        for(String s: result)
+            System.out.println(s);
     }
 
 }
