@@ -8,6 +8,7 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
+<<<<<<< HEAD
 				<Option working_dir="C:/Anas&apos;s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -20,10 +21,25 @@
 			<Target title="OS_LAB_1">
 				<Option output="C:/Anas&apos;s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/OS_LAB_1.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Anas&apos;s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug"/>
+=======
+				<Option working_dir="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OS_LAB_1">
+				<Option output="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/OS_LAB_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug"/>
+>>>>>>> 9a09c12c4c273258c41f95eb1df37a41f4de543d
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
@@ -40,10 +56,28 @@
 			<Target title="OS_LAB_1/fast">
 				<Option output="C:/Anas&apos;s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/OS_LAB_1.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Anas&apos;s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug"/>
+=======
+					<Add directory="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 OS_LAB_1"/>
+					<CompileFile command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OS_LAB_1/fast">
+				<Option output="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/OS_LAB_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug"/>
+>>>>>>> 9a09c12c4c273258c41f95eb1df37a41f4de543d
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
@@ -82,6 +116,45 @@
 			<Option target="OS_LAB_1"/>
 		</Unit>
 		<Unit filename="C:/Anas&apos;s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/CMakeLists.txt">
+=======
+					<Add directory="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 OS_LAB_1/fast"/>
+					<CompileFile command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/main.c">
+			<Option target="OS_LAB_1"/>
+		</Unit>
+		<Unit filename="D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/CMakeLists.txt">
+>>>>>>> 9a09c12c4c273258c41f95eb1df37a41f4de543d
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

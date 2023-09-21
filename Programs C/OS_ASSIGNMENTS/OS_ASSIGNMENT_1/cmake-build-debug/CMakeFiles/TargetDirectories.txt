@@ -1,0 +1,3 @@
+D:/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1/cmake-build-debug/CMakeFiles/OS_ASSIGNMENT_1.dir
+D:/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

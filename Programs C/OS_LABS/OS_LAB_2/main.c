@@ -41,7 +41,8 @@ int main(int argc, char ** argv){
 
 
 //Question #2
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdlib.h>

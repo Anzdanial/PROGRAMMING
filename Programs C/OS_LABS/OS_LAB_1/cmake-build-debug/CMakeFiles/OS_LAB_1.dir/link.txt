@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 "C:\Program Files\JetBrains\CLion 2023.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\OS_LAB_1.dir/objects.a
 C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc CMakeFiles\OS_LAB_1.dir/objects.a @CMakeFiles\OS_LAB_1.dir\objects1
 C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\OS_LAB_1.dir/objects.a -Wl,--no-whole-archive -o OS_LAB_1.exe -Wl,--out-implib,libOS_LAB_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\OS_LAB_1.dir\linkLibs.rsp
+=======
+C:\Users\anzda\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\OS_LAB_1.dir/objects.a
+C:\Users\anzda\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\OS_LAB_1.dir/objects.a @CMakeFiles\OS_LAB_1.dir\objects1.rsp
+C:\Users\anzda\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\OS_LAB_1.dir/objects.a -Wl,--no-whole-archive -o OS_LAB_1.exe -Wl,--out-implib,libOS_LAB_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\OS_LAB_1.dir\linkLibs.rsp
+>>>>>>> 9a09c12c4c273258c41f95eb1df37a41f4de543d

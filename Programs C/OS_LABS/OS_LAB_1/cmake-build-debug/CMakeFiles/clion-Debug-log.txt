@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "C:\Program Files\JetBrains\CLion 2023.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Anas's Data Win\PROGRAMMING\Programs C\OS_LABS\OS_LAB_1" -B "C:\Anas's Data Win\PROGRAMMING\Programs C\OS_LABS\OS_LAB_1\cmake-build-debug"
 -- The C compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
@@ -8,3 +9,15 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug
+=======
+C:\Users\anzda\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "D:\PROGRAMMING\Programs C\OS_LABS\OS_LAB_1" -B "D:\PROGRAMMING\Programs C\OS_LABS\OS_LAB_1\cmake-build-debug"
+-- The C compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/anzda/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (2.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug
+>>>>>>> 9a09c12c4c273258c41f95eb1df37a41f4de543d
