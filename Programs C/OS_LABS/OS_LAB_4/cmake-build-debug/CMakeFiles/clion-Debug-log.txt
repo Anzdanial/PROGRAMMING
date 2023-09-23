@@ -1,0 +1,4 @@
+/home/anzdanial/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S "/home/anzdanial/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4" -B "/home/anzdanial/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4/cmake-build-debug"
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/anzdanial/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4/cmake-build-debug

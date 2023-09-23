@@ -1,0 +1,3 @@
+/home/anzdanial/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4/cmake-build-debug/CMakeFiles/OS_LAB_4.dir
+/home/anzdanial/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anzdanial/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

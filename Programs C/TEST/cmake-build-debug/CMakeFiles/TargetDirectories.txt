@@ -1,0 +1,3 @@
+/home/anzdanial/PROGRAMMING/Programs C/TEST/cmake-build-debug/CMakeFiles/TEST.dir
+/home/anzdanial/PROGRAMMING/Programs C/TEST/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anzdanial/PROGRAMMING/Programs C/TEST/cmake-build-debug/CMakeFiles/rebuild_cache.dir
