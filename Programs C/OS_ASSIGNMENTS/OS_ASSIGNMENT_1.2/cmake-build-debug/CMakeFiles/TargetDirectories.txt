@@ -1,0 +1,5 @@
+/home/anzdanial/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1.2/cmake-build-debug/CMakeFiles/P1.dir
+/home/anzdanial/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1.2/cmake-build-debug/CMakeFiles/P2.dir
+/home/anzdanial/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1.2/cmake-build-debug/CMakeFiles/P3.dir
+/home/anzdanial/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1.2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anzdanial/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1.2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

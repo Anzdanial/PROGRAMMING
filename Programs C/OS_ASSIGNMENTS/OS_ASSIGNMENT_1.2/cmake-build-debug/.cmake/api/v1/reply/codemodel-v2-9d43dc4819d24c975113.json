@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OS_ASSIGNMENT_1_2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "P1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P1-Debug-4d160d2b4a1cb394f622.json",
+					"name" : "P1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "P2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P2-Debug-ea3f06d3f602850d9e2d.json",
+					"name" : "P2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "P3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P3-Debug-f74bc8eecac4454d7520.json",
+					"name" : "P3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anzdanial/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1.2/cmake-build-debug",
+		"source" : "/home/anzdanial/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_1.2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

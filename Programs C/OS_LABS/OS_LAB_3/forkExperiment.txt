@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <wait.h>
+#include <stdlib.h>
+
+int main() {
+   int a = 0;
+   pid_t val = fork();
+   if(val == 0) {
+        a += 1;
+       printf("%d \n", a);
+       exit(0);
+   }
+   if(val > 0){
+       wait(NULL);
+       printf("%d \n",a);
+   }
+}
+
+
+
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <wait.h>
+#include <stdlib.h>
+
+int main() {
+    pid_t p = getpid();
+    pid_t val = fork();
+    if(val == 0){
+        printf("My ID is %d and my Parent's ID is %d \n", getpid(), getppid());
+    }
+    if(val > 0){
+        //wait(NULL);
+        printf("My Parent ID is %d \n", getpid());
+    }
+   return 0;
+}

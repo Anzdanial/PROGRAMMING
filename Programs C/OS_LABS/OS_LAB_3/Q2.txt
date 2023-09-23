@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <wait.h>
+#include <stdlib.h>
+
+//fd[0] is for reading
+//fd[1] is for writing
+const int BUFFER_SIZE = 10;
+
+int main(int argc, char **argv) {
+    int fd[2];
+    int fd2[2];
+    pipe(fd);
+    pipe(fd2);
+    int val = fork();
+    if(val == 0){
+        close(fd[1]);
+        int newArray[5];
+        int sum = 0;
+        int bytesRead = read(fd[0], newArray, sizeof(newArray));
+        if (bytesRead == -1) {
+            perror("read");
+            exit(1);
+        }
+        for(int i = 0; i < 5; i++){
+            sum += newArray[i];
+        }
+        close(fd2[0]);
+        write(fd2[1], &sum, sizeof(sum));
+    }
+    else if(val > 0){
+        close(fd[0]);
+        int array[5] = {2, 6 ,3, 4, 5};
+        printf("The sent array is: ");
+        for(int i = 0; i < 5; i++){
+            printf("%d ", array[i]);
+        }
+        printf("\n");
+        write(fd[1], array, sizeof(array));
+        wait(NULL);
+
+        close(fd2[1]);
+        int sum;
+        read(fd2[0], &sum, sizeof (sum));
+        printf("The sum from child: %d \n", sum);
+    }
+
+    return 0;
+}
