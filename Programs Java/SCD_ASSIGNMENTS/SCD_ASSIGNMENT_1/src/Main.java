@@ -74,63 +74,29 @@ class TaskAllocation{
 
         boolean flag = false;
         for(int k = 0; k < result.length; k++) {
-            for (int j = 0; j < stringLengths[k] || flag ; j++) {
-                int nameLength = 0;
-                int i = 0;
-                while (result[k].charAt(i) != '|') {
-                    i++;
-                    nameLength++;
-                }
+            int nameLength = 0;
+            int i = 0;
+            while (result[k].charAt(i) != '|') {
+                i++;
+                nameLength++;
+            }
 
-                //Block 1
-                int startIndex = nameLength + 2;
-                i = startIndex;
-                while (result[k].charAt(i) != ':') {
-                    i++;
-                }
-                int lastIndex = i;
+            //Block 1
+            int startIndex = nameLength + 2;
+            i = startIndex;
+            while (result[k].charAt(i) != ':') {
+                i++;
+            }
+            int lastIndex = i;
 
-                int startYear = lastIndex + 1;
-                i = startYear;
-                while (result[k].charAt(i) != ',') {
-                    i++;
-                }
-                int lastYear = i;
+            int startYear = lastIndex + 1;
+            i = startYear;
+            while (result[k].charAt(i) != ',' || i < stringLengths[k]) {
+                i++;
+            }
+            int lastYear = i;
 
-                if(lastYear+1 > stringLengths[k]) {
-                    flag = true;
-                }
-
-                //Block 2
-                int startIndex1 = lastYear + 2;
-                i = startIndex1;
-                while (result[k].charAt(i) != ':') {
-                    i++;
-                }
-                int lastIndex1 = i;
-
-                int startYear1 = lastIndex1 + 1;
-                i = startYear1;
-                while (result[k].charAt(i) != ',') {
-                    i++;
-                }
-                int lastYear1 = i;
-
-                //Block3
-                int startIndex2 = lastYear1 + 2;
-                i = startIndex2;
-                while (result[k].charAt(i) != ':') {
-                    i++;
-                }
-                int lastIndex2 = i;
-
-                int startYear2 = lastIndex2 + 1;
-                i = startYear2;
-                while (result[k].charAt(i) != ',') {
-                    i++;
-                }
-                int lastYear2 = i;
-
+            if(lastYear > stringLengths[k]) {
                 String year = result[k].substring(startYear, lastYear);
                 int number = 0;
                 try {
@@ -142,38 +108,101 @@ class TaskAllocation{
                 setName((result[k].substring(0, nameLength - 1)));
                 setSkill(result[k].substring(startIndex, lastIndex), number, k);
                 incrementID();
+                continue;
+            }
+
+
+
+            //Block 2
+            int startIndex1 = lastYear + 2;
+            i = startIndex1;
+            while (result[k].charAt(i) != ':') {
+                i++;
+            }
+            int lastIndex1 = i;
+
+            int startYear1 = lastIndex1 + 1;
+            i = startYear1;
+            while (result[k].charAt(i) != ',' || i < stringLengths[k]) {
+                i++;
+            }
+            int lastYear1 = i;
+
+            if(lastYear1 > stringLengths[k]){
+                String year = result[k].substring(startYear, lastYear);
+                int number = 0;
+                try {
+                    number = Integer.parseInt(year);
+                } catch (NumberFormatException ex) {
+                    System.out.println("Before Failure, Current: " + k);
+                    ex.printStackTrace();
+                }
+                String year1 = result[k].substring(startYear1, lastYear1);
+                number = 0;
+                try {
+                    number = Integer.parseInt(year1);
+                } catch (NumberFormatException ex) {
+                    System.out.println("Before Failure, Current: " + k);
+                    ex.printStackTrace();
+                }
+                setName((result[k].substring(0, nameLength - 1)));
+                setSkill(result[k].substring(startIndex, lastIndex), number, k);
+                setSkill(result[k].substring(startIndex1, lastIndex1), number, k);
+                incrementID();
+                continue;
+            }
+
+
+
+
+
+            //Block3
+            int startIndex2 = lastYear1 + 2;
+            i = startIndex2;
+            while (result[k].charAt(i) != ':') {
+                i++;
+            }
+            int lastIndex2 = i;
+
+            int startYear2 = lastIndex2 + 1;
+            i = startYear2;
+            while (result[k].charAt(i) != ',' || i < stringLengths[k]) {
+                i++;
+            }
+            int lastYear2 = i;
+
+            if(lastYear2 > stringLengths[k]){
+                String year = result[k].substring(startYear, lastYear);
+                int number = 0;
+                try {
+                    number = Integer.parseInt(year);
+                } catch (NumberFormatException ex) {
+                    System.out.println("Before Failure, Current: " + k);
+                    ex.printStackTrace();
+                }
+                String year1 = result[k].substring(startYear1, lastYear1);
+                number = 0;
+                try {
+                    number = Integer.parseInt(year1);
+                } catch (NumberFormatException ex) {
+                    System.out.println("Before Failure, Current: " + k);
+                    ex.printStackTrace();
+                }
+                String year2 = result[k].substring(startYear2, lastYear2);
+                number = 0;
+                try {
+                    number = Integer.parseInt(year2);
+                } catch (NumberFormatException ex) {
+                    System.out.println("Before Failure, Current: " + k);
+                    ex.printStackTrace();
+                }
+                setName((result[k].substring(0, nameLength - 1)));
+                setSkill(result[k].substring(startIndex, lastIndex), number, k);
+                setSkill(result[k].substring(startIndex1, lastIndex1), number, k);
+                setSkill(result[k].substring(startIndex2, lastIndex2), number, k);
+                incrementID();
             }
         }
-        /*
-        int nameLength = 0;
-        int i = 0;
-        while (result[0].charAt(i) != '|') {
-            i++;
-            nameLength++;
-        }
-        int startIndex = nameLength + 2;
-        i = startIndex;
-        while (result[0].charAt(i) != ':') {
-            i++;
-        }
-        int lastIndex = i;
-
-        int startYear = lastIndex + 1;
-        i = startYear;
-        while (result[0].charAt(i) != ',') {
-            i++;
-        }
-        int lastYear = i;
-
-        String year = result[0].substring(startYear, lastYear);
-        int number = 0;
-        try {
-            number = Integer.parseInt(year);
-        } catch (NumberFormatException ex) {
-            ex.printStackTrace();
-        }
-
-         */
 
     }
         public Person getData(int ID){
