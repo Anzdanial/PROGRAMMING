@@ -4,51 +4,49 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 class SkillSet{
-    private String skillname;
-    private int yearsexperience;
-
-    SkillSet(String data, int number){
-        skillname = data;
-        yearsexperience = number;
+    private String skill;
+    private int yearsExperience;
+    public String getSkillName(){ return skill;}
+    public int getYearsOfExperience(){ return yearsExperience;}
+    public void setSkill(String s){
+        skill = s;
     }
-    public String getSkillName(){ return skillname;}
-    public int getYearsOfExperience(){ return yearsexperience;}
-    public void setSkillSet(String data, int number){
-        skillname = data;
-        yearsexperience = number;
+    public void setYearsExperience(int year){
+        yearsExperience = year;
     }
 }
 
 class Person{
     private String name;
-    private static int ID = 0;
     private ArrayList<SkillSet>skillset;
-    Person(String n, String skill, int numberExperience){
-        name = n;
-        skillset = new ArrayList<SkillSet>();
-        SkillSet newSkillset = new SkillSet(skill, numberExperience);
-        skillset.add(newSkillset);
-        ID++;
+    Person(){
+        skillset = new ArrayList<>();
     }
     public String getName(){
         return name;
     }
-    public String getSkill(int ID){
+    public SkillSet getSkillSet(int ID){
         SkillSet set = skillset.get(ID);
-        return set.getSkillName();
+        return set;
     }
-    public int getExperience(int ID){
-        SkillSet set = skillset.get(ID);
-        return set.getYearsOfExperience();
+    public int getSkillSetSize(){
+        return skillset.size();
     }
-    public void setSkillSet(String data, int number, int ID){
-        SkillSet newSkillset = skillset.get(ID);
-        newSkillset.setSkillSet(data,number);
-        skillset.add(newSkillset);
+
+    public void setPersonName(String n){
+        name = n;
     }
+    public void addPersonSkillSet(String s, int Number){
+        SkillSet newSkillSet = new SkillSet();
+        newSkillSet.setSkill(s);
+        newSkillSet.setYearsExperience(Number);
+        skillset.add(newSkillSet);
+    }
+
 }
 
 class TaskAllocation{
+    private static int ID = 0;
     private ArrayList<Person> applicants;
     TaskAllocation(){
         applicants = new ArrayList<>();
@@ -63,53 +61,90 @@ class TaskAllocation{
         } catch (Exception e) {
             e.getStackTrace();
         }
-        char[] arraynew = new char[characterRead];
+        char[] arrayNew = new char[characterRead];
         for (int i = 0; i < characterRead; i++)
-            arraynew[i] = array[i];
-        String inputString = new String(arraynew);
+            arrayNew[i] = array[i];
+        String inputString = new String(arrayNew);
         String[] result = inputString.split("\n");
 
-        //for(String s: result)
-        //  System.out.println(s);
         int[] stringLengths = new int[result.length];
         for (int i = 0; i < result.length; i++) {
             stringLengths[i] = result[i].length();
         }
-        /*
+
+        boolean flag = false;
         for(int k = 0; k < result.length; k++) {
-            for (int j = 0; j < stringLengths[j]; j++) {
+            for (int j = 0; j < stringLengths[k] || flag ; j++) {
                 int nameLength = 0;
                 int i = 0;
-                while (result[j].charAt(i) != '|') {
+                while (result[k].charAt(i) != '|') {
                     i++;
                     nameLength++;
                 }
+
+                //Block 1
                 int startIndex = nameLength + 2;
                 i = startIndex;
-                while (result[0].charAt(i) != ':') {
+                while (result[k].charAt(i) != ':') {
                     i++;
                 }
                 int lastIndex = i;
 
                 int startYear = lastIndex + 1;
                 i = startYear;
-                while (result[0].charAt(i) != ',') {
+                while (result[k].charAt(i) != ',') {
                     i++;
                 }
                 int lastYear = i;
 
-                String year = result[0].substring(startYear, lastYear);
+                if(lastYear+1 > stringLengths[k]) {
+                    flag = true;
+                }
+
+                //Block 2
+                int startIndex1 = lastYear + 2;
+                i = startIndex1;
+                while (result[k].charAt(i) != ':') {
+                    i++;
+                }
+                int lastIndex1 = i;
+
+                int startYear1 = lastIndex1 + 1;
+                i = startYear1;
+                while (result[k].charAt(i) != ',') {
+                    i++;
+                }
+                int lastYear1 = i;
+
+                //Block3
+                int startIndex2 = lastYear1 + 2;
+                i = startIndex2;
+                while (result[k].charAt(i) != ':') {
+                    i++;
+                }
+                int lastIndex2 = i;
+
+                int startYear2 = lastIndex2 + 1;
+                i = startYear2;
+                while (result[k].charAt(i) != ',') {
+                    i++;
+                }
+                int lastYear2 = i;
+
+                String year = result[k].substring(startYear, lastYear);
                 int number = 0;
                 try {
                     number = Integer.parseInt(year);
                 } catch (NumberFormatException ex) {
+                    System.out.println("Before Failure, Current: " + k);
                     ex.printStackTrace();
                 }
-
-                setApplicants((result[0].substring(0, nameLength - 1)), result[0].substring(startIndex, lastIndex), number);
+                setName((result[k].substring(0, nameLength - 1)));
+                setSkill(result[k].substring(startIndex, lastIndex), number, k);
+                incrementID();
             }
         }
-         */
+        /*
         int nameLength = 0;
         int i = 0;
         while (result[0].charAt(i) != '|') {
@@ -137,33 +172,39 @@ class TaskAllocation{
         } catch (NumberFormatException ex) {
             ex.printStackTrace();
         }
-        setApplicants((result[0].substring(0, nameLength - 1)), result[0].substring(startIndex, lastIndex), number);
-        System.out.println(number+2);
 
+         */
 
     }
-        public Person getPersonData(int ID){
+        public Person getData(int ID){
             return applicants.get(ID);
         }
-        public void setApplicants(String name, String Skill, int number){
-            Person applicant = new Person(name, Skill, number);
+        public void setName(String n){
+            Person applicant = new Person();
+            applicant.setPersonName(n);
             applicants.add(applicant);
         }
-
-        public void setSkillSetByID(String skill, int number, int ID){
-            Person newPerson = applicants.get(ID);
-            newPerson.setSkillSet(skill,number,ID);
+        public void setSkill(String s, int number, int ID){
+            Person applicant = applicants.get(ID);
+            applicant.addPersonSkillSet(s, number);
         }
+         public void incrementID(){ID++;}
     }
-
-
-
 
 public class Main {
     public static void main(String[] args) throws IOException {
         TaskAllocation t1 = new TaskAllocation();
         t1.FileReader();
-        //t1.getPersonData(0);
+        for(int j = 0; j < 5; j++) {
+            Person temp = t1.getData(j);
+            System.out.println(temp.getName());
+            for (int i = 0; i < temp.getSkillSetSize(); i++) {
+                System.out.print(temp.getSkillSet(i).getSkillName() + " , ");
+                System.out.print(temp.getSkillSet(i).getYearsOfExperience() + " , ");
+                System.out.println();
+            }
+            System.out.println();
+        }
     }
 }
 
