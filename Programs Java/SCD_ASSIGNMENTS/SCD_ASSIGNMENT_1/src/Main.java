@@ -2,6 +2,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class SkillSet{
     private String skill;
@@ -258,19 +259,33 @@ class SkillOnlyMatch implements MatchingStrategy{
     }
 }
 
-public class Main {
-    public static void main(String[] args) throws IOException {
+class StrategyController{
+    StrategyController(MatchingStrategy val) throws IOException {
         Resource r1 = new Resource();
         r1.fileReader();
 
         Task t1 = new Task();
         t1.fileReader();
 
-//        ExactMatch search = new ExactMatch();
-//        search.performMatch(r1,t1);
+        val.performMatch(r1,t1);
+    }
+}
 
-        SkillOnlyMatch search1 = new SkillOnlyMatch();
-        search1.performMatch(r1,t1);
+public class Main {
+    public static void main(String[] args) throws IOException {
+        System.out.println("Specify which Strategy you'd like to perform: ");
+        System.out.print("1) SkillOnlyMatch ");
+        System.out.println("2) ExactMatch ");
+        Scanner input = new Scanner(System.in);
+        int inputNum = input.nextInt();
+        if(inputNum == 1) {
+            SkillOnlyMatch search = new SkillOnlyMatch();
+            StrategyController s = new StrategyController(search);
+        }
+        else if(inputNum == 2){
+            ExactMatch search = new ExactMatch();
+            StrategyController s = new StrategyController(search);
+        }
 
         /*
         for(int j = 0; j < 5; j++) {
