@@ -1,20 +1,23 @@
-import java.util.Scanner;
-
-class test <T>{
-    public <T extends Number> T add(T num1, T num2) {
-        return num1 + num2; // This will work because T is guaranteed to be a Number.
-    }
+class C {
+    public int x;
 }
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int readNumber = -1;
-        try {
-            readNumber = Integer.parseInt(input.nextLine());
-        }
-        catch(Exception e){
-            System.out.println("");
-        }
+class D {
+    public static void f (C c, int y) {
+        System.out.println(c.x);
+        c.x = y;
+        y++;
+        System.out.println(c.x);
+        c = new C();
+        c.x = y+2;
+        System.out.println(c.x);
+    }
+    public static void main (String[]  args) {
+        int z = 4;
+        C c = new C();
+        c.x = 3;
+        System.out.println(c.x);
+        f(c, z);
+        System.out.println(c.x);
+        System.out.println(z);
     }
 }

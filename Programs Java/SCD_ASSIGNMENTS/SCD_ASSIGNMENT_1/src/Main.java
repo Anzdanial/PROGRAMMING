@@ -1,6 +1,5 @@
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -63,11 +62,6 @@ class Resource {
 
         for (int i = 0; i < result.length; i++) {
             result[i] = result[i].trim();
-        }
-
-        int[] stringLengths = new int[result.length];
-        for (int i = 0; i < result.length; i++) {
-            stringLengths[i] = result[i].length();
         }
 
 
@@ -286,7 +280,6 @@ public class Main {
             ExactMatch search = new ExactMatch();
             StrategyController s = new StrategyController(search);
         }
-
         /*
         for(int j = 0; j < 5; j++) {
             Data temp = r1.getData(j);
