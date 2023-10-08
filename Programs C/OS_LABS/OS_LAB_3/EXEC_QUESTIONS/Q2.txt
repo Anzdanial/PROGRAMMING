@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <malloc.h>
+
+int main(int argc, char **argv){
+	pid_t child1 = fork();
+	if(child1) {
+		printf("Parent Process with ID %d \n", getpid());
+		wait(NULL);
+		printf("Child1 Complete \n");
+		pid_t child2 = fork();
+		if(child2 == 0){
+			printf("Child Process with ID %d \n", getpid());
+			printf("Creating two new files called \"file1.txt\" \"file2.txt\" \n");
+			char *args[] = {"/bin/sh","-c","cd demo_folder && touch file1.txt file2.txt",NULL};
+			execvp("/bin/sh", args);
+		}
+		else {
+			wait(NULL);
+			printf("Child2 Complete \n");
+		}
+		pid_t child3 = fork();
+		if(child3 == 0){
+			printf("Child Process with ID %d \n", getpid());
+			printf("Listing the files in Directory \"demo_folder\" \n");
+			char *args[] = {"/bin/sh","-c","cd demo_folder && ls",NULL};
+			execvp("/bin/sh", args);
+		}
+		else {
+			wait(NULL);
+			printf("Child3 Complete \n");
+		}
+		pid_t child4 = fork();
+		if(child4 == 0){
+			printf("Child Process with ID %d \n", getpid());
+			printf("Removing the Directory \"demo_folder\" \n");
+			char *args[] = {"rm","-rf","demo_folder", NULL};
+			execvp("rm", args);
+		}
+		else {
+			wait(NULL);
+			printf("Child4 Complete \n");
+		}
+	}
+	else {
+		printf("Child Process with ID %d \n", getpid());
+		printf("Creating a Directory \"demo_folder\" \n");
+		execlp("mkdir", "mkdir", "demo_folder", NULL);
+	}
+	return 0;
+}

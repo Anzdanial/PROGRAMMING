@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <malloc.h>
+#include <stdlib.h>
+
+int main(int argc, char **argv){
+	pid_t child1 = fork();
+	if(child1) {
+		printf("Parent Process with ID %d \n", getpid());
+		wait(NULL);
+	}
+	else {
+		printf("Child Process with ID %d \n", getpid());
+		char *args[] = {"./fibonacci", argv[1], NULL};
+		execv(args[0], args);
+	}
+	return 0;
+
+}

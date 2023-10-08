@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.26"
+						"string" : "3.22"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "OS_LAB_3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OS_LAB_3-Debug-543d88710c777453f398.json",
+					"jsonFile" : "target-OS_LAB_3-Debug-8aa97a665c946f01384c.json",
 					"name" : "OS_LAB_3",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/anzdanial/PROGRAMMING/Programs C/OS_LABS/OS_LAB_3/cmake-build-debug",
-		"source" : "/home/anzdanial/PROGRAMMING/Programs C/OS_LABS/OS_LAB_3"
+		"build" : "/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_3/cmake-build-debug",
+		"source" : "/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_3"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 3
 	}
 }

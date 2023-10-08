@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <malloc.h>
+
+int main(int argc, char **argv){
+	pid_t val = fork();
+	if(val) {
+		printf("Parent Process with ID %d \n", getpid());
+		wait(NULL);
+		printf("Execution Complete \n");
+	}
+	else {
+		printf("Child Process with ID %d \n", getpid());
+		printf("Calling my_info.c from Child Process \n");
+		char *args[] = {"./my_info", NULL};
+		execv(args[0], args);
+	}
+	return 0;
+}

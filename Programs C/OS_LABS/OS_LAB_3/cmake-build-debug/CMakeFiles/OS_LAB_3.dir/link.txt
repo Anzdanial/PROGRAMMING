@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/OS_LAB_3.dir/main.c.o CMakeFiles/OS_LAB_3.dir/EXEC_QUESTIONS/my_info.c.o CMakeFiles/OS_LAB_3.dir/EXEC_QUESTIONS/fibonacci.c.o CMakeFiles/OS_LAB_3.dir/functions.c.o -o OS_LAB_3 
