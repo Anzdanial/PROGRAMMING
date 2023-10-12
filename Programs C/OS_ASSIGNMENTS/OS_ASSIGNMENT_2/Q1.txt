@@ -1,0 +1,69 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/wait.h>
+
+//Write is 1, Read is 0
+int main(int argc, char **argv){
+    if(argc < 2){
+        printf("No Input Given \n");
+        return 1;
+    }
+    int N = atoi(argv[1]);
+    int pipe1[2];
+    int pipe2[2];
+    pipe(pipe1);
+    pipe(pipe2);
+    int child1 = fork();
+    if(child1 == 0){
+        int sum = 1;
+        if(N == 6)
+            sum = 0;
+        close(pipe1[0]);
+        for(int i = 2; i < N/4; i++){
+            if(N % i == 0) {
+                sum += i;
+            }
+        }
+        printf("The sum from Child 1 is %d \n", sum);
+        write(pipe1[1], &sum, sizeof(sum));
+        close(pipe1[1]);
+    }
+    else{
+        wait(NULL);
+        int sum;
+        close(pipe1[1]);
+        read(pipe1[0],&sum,sizeof(sum));
+        close(pipe1[0]);
+        int child2 = fork();
+        if(child2 == 0){
+            int sum1 = 0;
+            close(pipe2[0]);
+            for(int i = N/4 ; i <= N/2; i++){
+                if(N % i == 0) {
+                    sum1 += i;
+                }
+            }
+            printf("The sum from Child 2 is %d \n", sum1);
+            write(pipe2[1], &sum1, sizeof(sum1));
+            close(pipe2[1]);
+        }
+        else{
+            wait(NULL);
+            int sum1;
+            close(pipe2[1]);
+            read(pipe2[0],&sum1,sizeof(sum1));
+            close(pipe2[0]);
+
+            if(sum1+sum == N)
+                printf("The number is Perfect \n");
+            else {
+                printf("OH HELL NAH \n");
+            }
+        }
+
+    }
+
+
+    return 0;
+}

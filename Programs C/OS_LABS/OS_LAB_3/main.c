@@ -26,7 +26,10 @@ int main(int argc, char *argv[]) {
 	int order = atoi(argv[2]);
 	int position = atoi(argv[3]);
 
-	findHighest(array, position);
-
+    printf("Array Elements are: ");
+    print(array);
+    printf("Sorted Elements are: ");
+	sort(array, order);
+    findHighest(array, position);
 	return 0;
 }

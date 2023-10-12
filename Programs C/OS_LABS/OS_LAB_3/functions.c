@@ -8,44 +8,73 @@ void swap(int *a, int *b) {
 	*b = temp;
 }
 
-void bubbleSort(int array[], int n, bool order) {
-	for (int i = 0; i < n - 1; i++) {
-		for (int j = 0; j < n - i - 1; j++) {
-			if ((order && array[j] > array[j + 1]) || (!order && array[j] < array[j + 1])) {
-				swap(&array[j], &array[j + 1]);
-			}
-		}
-	}
-}
-
-void sort(int array[], bool order) {
-	int n = sizeof(array) / sizeof(array[0]);
-	bubbleSort(array, n, order);
+//Ascending is True
+//Descending is False
+void sort(int array[],bool order){
+    int size;
+    for(size = 0; array[size] != '\0'; size++);
+    if(order){
+        for(int i = 0; i < size; i++){
+            for(int j = i+1; j < size; j++){
+                if(array[i] > array[j])
+                    swap(&array[i],&array[j]);
+            }
+        }
+    }
+    else{
+        for(int i = 0; i < size; i++){
+            for(int j = i+1; j < size; j++){
+                if(array[i] < array[j])
+                    swap(&array[i],&array[j]);
+            }
+        }
+    }
+    printf("Sorted Array is: ");
+    for(int i = 0; i < size; i++)
+        printf("%d ",array[i]);
+    printf("\n");
 }
 
 void findHighest(int array[], int position) {
-	int n = sizeof(array) / sizeof(array[0]);
+	int n;
+    for(n = 0; array[n] != '\0'; n++);
 	if (position < 1 || position > n) {
 		printf("Invalid position. Position should be between 1 and %d.\n", n);
 		return;
 	}
 
-	// Sort the array in descending order
-	bubbleSort(array, n, false);
+    bool order;
+	if(array[0] > array[1]) {
+        order = 0;
 
-	printf("Sorted Array: ");
-	for (int i = 0; i < n; i++) {
-		printf("%d ", array[i]);
-	}
-	printf("\n");
+    }
+    else if(array[1] > array[0]) {
+        order = 1;
+    }
 
-	printf("The %d%s highest number is: %d\n", position, (position == 1) ? "st" : (position == 2) ? "nd" : "th", array[position - 1]);
+    bool flag = false;
+    for(int i = 0, j = n; flag!=true; i++){
+        if(order){
+            if(i == position-1) {
+                printf("The %d Highest Element is: %d \n", position, array[i]);
+                flag = true;
+            }
+        }
+        else{
+            if((n-j) == position) {
+                printf("The %d Highest Element is: %d \n", position, array[j]);
+                flag = true;
+            }
+            else
+                j--;
+        }
+    }
 }
 
-void print(int array[], int n) {
-	printf("Array: ");
-	for (int i = 0; i < n; i++) {
-		printf("%d ", array[i]);
-	}
-	printf("\n");
+void print(int array[]) {
+    int size;
+    for(size = 0; array[size] != '\0'; size++);
+    for(int i = 0; i < size; i++)
+        printf("%d ",array[i]);
+    printf("\n");
 }

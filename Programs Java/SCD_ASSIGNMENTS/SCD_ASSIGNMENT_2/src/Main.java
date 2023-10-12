@@ -1,8 +1,8 @@
 import javax.swing.*;
+import java.awt.*;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 class SkillSet{
     private String skill;
@@ -266,37 +266,69 @@ class StrategyController{
     }
 }
 
-class AdditionForm extends JFrame {
+class AdditionForm {
     private Resource resource;
     private Task task;
+    private JFrame frame;
     private JButton addButton;
-    private JPanel resourcePanel;
-    private JPanel taskPanel;
-
-    AdditionForm(){
+    private JPanel panel;
+    private JTable resourceTable;
+    private JTable taskTable;
+    AdditionForm() throws IOException {
+        frame = new JFrame();
         task = new Task();
         resource = new Resource();
-        addButton = new JButton("Add");
-        resourcePanel = new JPanel();
+        resource.fileReader();
+        task.fileReader();
+//        addButton = new JButton("Add");
+        panel = new JPanel();
+        resourceTable = new JTable(resource.getResourceSize(),3);
+        taskTable = new JTable(task.getTaskSize(),3);
+    }
+
+    public void setupUI(){
+        for(int i = 0; i < resource.getResourceSize(); i++){
+            for(int j = 0; j < resource.getData(i).getSkillSetSize(); j++){
+                resourceTable.setValueAt(resource.getData(i).getName(),i,0);
+                resourceTable.setValueAt(resource.getData(i).getSkillSet(j).get(j).getSkillName(),i,1);
+                resourceTable.setValueAt(resource.getData(i).getSkillSet(j).get(j).getYearsOfExperience(),i,2);
+            }
+        }
+        for(int i = 0; i < task.getTaskSize(); i++){
+            for(int j = 0; j < task.getData(i).getSkillSetSize(); j++){
+                taskTable.setValueAt(task.getData(i).getName(),i,0);
+                taskTable.setValueAt(task.getData(i).getSkillSet(j).get(j).getSkillName(),i,1);
+                taskTable.setValueAt(task.getData(i).getSkillSet(j).get(j).getYearsOfExperience(),i,2);
+            }
+        }
+        panel.setLayout(new BorderLayout());
+        panel.add(taskTable, BorderLayout.NORTH);
+        panel.add(resourceTable, BorderLayout.SOUTH);
+        frame.add(panel);
+        frame.setTitle("Display Form");
+        frame.setSize(500, 250);
+        frame.setVisible(true);
     }
 
 }
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println("Specify which Strategy you'd like to perform: ");
-        System.out.print("1) SkillOnlyMatch ");
-        System.out.println("2) ExactMatch ");
-        Scanner input = new Scanner(System.in);
-        int inputNum = input.nextInt();
-        if(inputNum == 1) {
-            SkillOnlyMatch search = new SkillOnlyMatch();
-            StrategyController s = new StrategyController(search);
-        }
-        else if(inputNum == 2){
-            ExactMatch search = new ExactMatch();
-            StrategyController s = new StrategyController(search);
-        }
+            AdditionForm anas = new AdditionForm();
+            anas.setupUI();
+//        System.out.println("Specify which Strategy you'd like to perform: ");
+//        System.out.print("1) SkillOnlyMatch ");
+//        System.out.println("2) ExactMatch ");
+//        Scanner input = new Scanner(System.in);
+//        int inputNum = input.nextInt();
+//        if(inputNum == 1) {
+//            SkillOnlyMatch search = new SkillOnlyMatch();
+//            StrategyController s = new StrategyController(search);
+//        }
+//        else if(inputNum == 2){
+//            ExactMatch search = new ExactMatch();
+//            StrategyController s = new StrategyController(search);
+//        }
         /*
         for(int j = 0; j < 5; j++) {
             Data temp = r1.getData(j);

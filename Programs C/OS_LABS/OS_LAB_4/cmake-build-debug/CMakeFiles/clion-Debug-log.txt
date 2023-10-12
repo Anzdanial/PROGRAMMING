@@ -1,10 +1,13 @@
-"C:\Program Files\JetBrains\CLion 2023.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Anas's Data Win\PROGRAMMING\Programs C\OS_LABS\OS_LAB_4" -B "C:\Anas's Data Win\PROGRAMMING\Programs C\OS_LABS\OS_LAB_4\cmake-build-debug"
--- The C compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/JetBrains/CLion 2023.1/bin/mingw/bin/gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4/cmake-build-debug
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/c/Anas'\"'\"'s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4/cmake-build-debug' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S '/mnt/c/Anas'\"'\"'s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4' -B '/mnt/c/Anas'\"'\"'s Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_4/cmake-build-debug'"
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+  CMake 3.24 or higher is required.  You are running version 3.22.1
+
+
+-- Configuring incomplete, errors occurred!
+
+Cannot get compiler information:
+	Compiler exited with error code 1: C:\Program Files\JetBrains\CLion 2023.1\bin\mingw\bin\gcc.exe -xc -g -std=gnu11 -fpch-preprocess -v -dD -E
+	gcc.exe: fatal error: cannot execute 'ld': CreateProcess: No such file or directory
+	compilation terminated.
+	
+	
