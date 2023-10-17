@@ -1,0 +1,43 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Reading data from the CSV file and storing in a DataFrame
+df = pd.read_csv('dataset2.csv')
+
+# Storing data into separate lists
+ids = df['ID'].tolist()
+statuses = df['Status'].tolist()
+priorities = df['Priority'].tolist()
+assignees = df['Assignee'].tolist()
+start_dates = df['Start date'].tolist()
+finish_dates = df['Finish date'].tolist()
+estimated_times = df['Estimated time'].tolist()
+spent_times = df['Spent time (hrs)'].tolist()
+progress = df['Progress (%)'].tolist()
+
+plt.figure(figsize=(8, 6))
+plt.hist(priorities, alpha=0.7, color='skyblue', edgecolor='black')
+plt.title('Frequency of Priorities')
+plt.xlabel('Priorities')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.show()
+
+# Plotting frequency of assignees
+plt.figure(figsize=(12, 6))
+plt.hist(assignees, alpha=0.7, color='lightgreen', edgecolor='black')
+plt.title('Frequency of Assignees')
+plt.xlabel('Assignees')
+plt.ylabel('Frequency')
+plt.xticks(rotation=45, ha='right')  # Rotating x-axis labels for better visibility
+plt.grid(axis='y', alpha=0.75)
+plt.show()
+
+# Plotting frequency of progress
+plt.figure(figsize=(8, 6))
+plt.hist(progress, alpha=0.7, color='lightcoral', edgecolor='black')
+plt.title('Frequency of Progress')
+plt.xlabel('Progress (%)')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.show()

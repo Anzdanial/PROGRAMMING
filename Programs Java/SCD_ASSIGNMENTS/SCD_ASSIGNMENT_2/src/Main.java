@@ -1,5 +1,9 @@
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -274,40 +278,44 @@ class AdditionForm {
     private JPanel panel;
     private JTable resourceTable;
     private JTable taskTable;
-    AdditionForm() throws IOException {
-        frame = new JFrame();
-        task = new Task();
-        resource = new Resource();
-        resource.fileReader();
-        task.fileReader();
-//        addButton = new JButton("Add");
-        panel = new JPanel();
-        resourceTable = new JTable(resource.getResourceSize(),3);
-        taskTable = new JTable(task.getTaskSize(),3);
-    }
+    AdditionForm(){}
 
     public void setupUI(){
-        for(int i = 0; i < resource.getResourceSize(); i++){
-            for(int j = 0; j < resource.getData(i).getSkillSetSize(); j++){
-                resourceTable.setValueAt(resource.getData(i).getName(),i,0);
-                resourceTable.setValueAt(resource.getData(i).getSkillSet(j).get(j).getSkillName(),i,1);
-                resourceTable.setValueAt(resource.getData(i).getSkillSet(j).get(j).getYearsOfExperience(),i,2);
+        task = new Task();
+        resource = new Resource();
+        JLabel label = new JLabel("Resource");
+        JTextField field = new JTextField();
+        JButton button = new JButton("Add");
+        JFrame frame = new JFrame();
+        JPanel panel = new JPanel();
+        DefaultListModel<String> listModel = new DefaultListModel<>();
+        JList<String> myList = new JList<>(listModel);
+        myList.addListSelectionListener(new ListSelectionListener() {
+            public void valueChanged(ListSelectionEvent e) {
+                if (!e.getValueIsAdjusting()) {
+                    Object selectedValue = myList.getSelectedValue();
+                    System.out.println("Selected: " + selectedValue);
+                }
             }
-        }
-        for(int i = 0; i < task.getTaskSize(); i++){
-            for(int j = 0; j < task.getData(i).getSkillSetSize(); j++){
-                taskTable.setValueAt(task.getData(i).getName(),i,0);
-                taskTable.setValueAt(task.getData(i).getSkillSet(j).get(j).getSkillName(),i,1);
-                taskTable.setValueAt(task.getData(i).getSkillSet(j).get(j).getYearsOfExperience(),i,2);
+        });
+        button.addActionListener(e -> {
+            String newItem = field.getText();
+            if (!newItem.isEmpty()) {
+                listModel.addElement(newItem);
+                field.setText("");
             }
-        }
+        });
         panel.setLayout(new BorderLayout());
-        panel.add(taskTable, BorderLayout.NORTH);
-        panel.add(resourceTable, BorderLayout.SOUTH);
+        panel.add(label, BorderLayout.WEST);
+        panel.add(field, BorderLayout.CENTER);
+        panel.add(button, BorderLayout.EAST);
+        panel.add(myList, BorderLayout.SOUTH);
         frame.add(panel);
-        frame.setTitle("Display Form");
+        frame.setTitle("Add Form");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 250);
         frame.setVisible(true);
+        System.out.println(resource.getData(0).getName());
     }
 
 }

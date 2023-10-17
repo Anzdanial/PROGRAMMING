@@ -1,0 +1,50 @@
+import csv
+import matplotlib.pyplot as plt
+
+# Lists to store data
+types = []
+urgencies = []
+severities = []
+priorities = []
+
+# Reading data from the CSV file and storing in lists
+with open('dataset1.csv', mode='r') as file:
+    csv_reader = csv.reader(file)
+    next(csv_reader)
+    for row in csv_reader:
+        types.append(row[0])
+        urgencies.append(row[1])
+        severities.append(row[2])
+        priorities.append(row[3])
+
+# Sorting the lists in ascending order
+types.sort()
+urgencies.sort()
+priorities.sort()
+
+# Plotting histograms for types
+plt.figure(figsize=(8, 6))
+plt.hist(types, alpha=0.7, color='skyblue', edgecolor='black')
+plt.title('Frequency of Types')
+plt.xlabel('Types')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.show()
+
+# Plotting histograms for urgencies
+plt.figure(figsize=(8, 6))
+plt.hist(urgencies, alpha=0.7, color='lightgreen', edgecolor='black')
+plt.title('Frequency of Urgencies')
+plt.xlabel('Urgencies')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.show()
+
+# Plotting histograms for priorities
+plt.figure(figsize=(8, 6))
+plt.hist(priorities, alpha=0.7, color='lightcoral', edgecolor='black')
+plt.title('Frequency of Priorities')
+plt.xlabel('Priorities')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.show()

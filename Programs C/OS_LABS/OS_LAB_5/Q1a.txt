@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <stdbool.h>
+
+//main1 file hai ye
+//Write File
+//This will run First
+int main() {
+    const char* pipeName = "/tmp/lab_5.1";
+    char buffer[1024];
+    mkfifo(pipeName, 0666);
+    int fd = open(pipeName, O_WRONLY);
+
+    printf("Enter the Message: ");
+    fgets(buffer,sizeof(buffer),stdin);
+    int size;
+    for(size = 0; buffer[size]!='\0'; size++);
+    size--;
+    printf("Size of String is: %d \n", size);
+
+    write(fd, buffer, sizeof(buffer));
+    close(fd);
+
+    fd = open(pipeName, O_RDONLY);
+    read(fd,buffer,sizeof(buffer));
+    close(fd);
+
+    for(size = 0; buffer[size]!='\0'; size++);
+    size--;
+
+    printf("The message is: ");
+    printf("%s", buffer);
+    printf("Size of String Received: %d \n", size);
+    return 0;
+}

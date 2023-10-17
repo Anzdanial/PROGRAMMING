@@ -1,0 +1,16 @@
+import csv
+
+# Reading data from the CSV file
+with open('dataset2.csv', mode='r', encoding='latin1') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        estimated_time_str = row['Estimated time']
+        spent_time_str = row['Spent time (hrs)']
+
+        if estimated_time_str and spent_time_str and float(estimated_time_str) != 0:
+            estimated_time = float(estimated_time_str)
+            spent_time = float(spent_time_str)
+            accuracy = (spent_time / estimated_time) * 100
+            print(f"Bug ID: {row['ID']}, Schedule Estimation Accuracy: {accuracy:.2f}%")
+        else:
+            print(f"Bug ID: {row['ID']}, Schedule Estimation Accuracy: N/A (missing data)")

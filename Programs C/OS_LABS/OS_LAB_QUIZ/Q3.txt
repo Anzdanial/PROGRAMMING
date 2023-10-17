@@ -1,0 +1,1 @@
+Because the Process is a Orphan Process and becomes part of the init process.

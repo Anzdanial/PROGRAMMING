@@ -1,0 +1,28 @@
+import csv
+from datetime import datetime
+
+total_response_time = 0
+valid_records = 0
+
+# Reading data from the CSV file
+with open('dataset2.csv', mode='r', encoding='latin1') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        start_date_str = row['Start date']
+        finish_date_str = row['Finish date']
+
+        if start_date_str and finish_date_str:
+            start_date = datetime.strptime(start_date_str, '%m/%d/%Y')
+            finish_date = datetime.strptime(finish_date_str, '%m/%d/%Y')
+            response_time = (finish_date - start_date).total_seconds() / 3600  # Convert to hours
+            total_response_time += response_time
+            valid_records += 1
+            print(f"Bug ID: {row['ID']}, Fix Response Time: {response_time:.2f} hours")
+        else:
+            print(f"Bug ID: {row['ID']}, Fix Response Time: N/A (missing data)")
+
+if valid_records > 0:
+    average_response_time = total_response_time / valid_records
+    print(f"\nAverage Fix Response Time: {average_response_time:.2f} hours")
+else:
+    print("\nNo valid records found to calculate average response time.")

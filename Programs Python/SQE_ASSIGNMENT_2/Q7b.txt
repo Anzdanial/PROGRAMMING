@@ -1,0 +1,196 @@
+import csv
+from datetime import datetime
+import csv
+import os
+import matplotlib.pyplot as plt
+
+# Lists to store data
+ids = []
+issue_types = []
+statuses = []
+resolutions = []
+components = []
+severities = []
+reporters = []
+created_dates = []
+updated_dates = []
+assignees = []
+resolved = []
+
+# Reading data from the CSV file
+with open('dataset3.csv', mode='r', encoding='latin1') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        row_components = row['component'].strip().split(';')  # Split the components if they are separated by ';'
+        for component in row_components:
+            if not component:  # Check if the component is empty
+                component = 'Empty'
+            ids.append(row['issue_id'].strip())
+            issue_types.append(row['type'].strip())
+            statuses.append(row['status'].strip())
+            resolutions.append(row['resolution'].strip())
+            components.append(component.strip())
+            severities.append(row['priority'].strip())
+            reporters.append(row['reporter'].strip())
+            created_dates.append(row['created'].strip())
+            updated_dates.append(row['assigned'].strip())
+            assignees.append(row['assignee'].strip())
+            resolved.append(row['resolved'].strip())
+
+
+
+idsA = []
+issue_typesA = []
+statusesA = []
+resolutionsA = []
+componentsA = []
+severitiesA = []
+reportersA = []
+created_datesA = []
+updated_datesA = []
+assigneesA = []
+resolvedA = []
+
+# Reading data from the CSV file
+with open('dataset3AModules.csv', mode='r', encoding='latin1') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        row_components = row['component'].strip().split(';')  # Split the components if they are separated by ';'
+        for component in row_components:
+            if not component:  # Check if the component is empty
+                component = 'Empty'
+            idsA.append(row['issue_id'].strip())
+            issue_typesA.append(row['type'].strip())
+            statusesA.append(row['status'].strip())
+            resolutionsA.append(row['resolution'].strip())
+            componentsA.append(component.strip())
+            severitiesA.append(row['priority'].strip())
+            reportersA.append(row['reporter'].strip())
+            created_datesA.append(row['created'].strip())
+            updated_datesA.append(row['assigned'].strip())
+            assigneesA.append(row['assignee'].strip())
+            resolvedA.append(row['resolved'].strip())
+
+
+
+
+idsC = []
+issue_typesC = []
+statusesC = []
+resolutionsC = []
+componentsC = []
+severitiesC = []
+reportersC = []
+created_datesC = []
+updated_datesC = []
+assigneesC = []
+resolvedC = []
+
+with open('dataset3CModules.csv', mode='r', encoding='latin1') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        row_components = row['component'].strip().split(';')  # Split the components if they are separated by ';'
+        for component in row_components:
+            if not component:  # Check if the component is empty
+                component = 'Empty'
+            idsC.append(row['issue_id'].strip())
+            issue_typesC.append(row['type'].strip())
+            statusesC.append(row['status'].strip())
+            resolutionsC.append(row['resolution'].strip())
+            componentsC.append(component.strip())
+            severitiesC.append(row['priority'].strip())
+            reportersC.append(row['reporter'].strip())
+            created_datesC.append(row['created'].strip())
+            updated_datesC.append(row['assigned'].strip())
+            assigneesC.append(row['assignee'].strip())
+            resolvedC.append(row['resolved'].strip())
+
+
+idsD = []
+issue_typesD = []
+statusesD = []
+resolutionsD = []
+componentsD = []
+severitiesD = []
+reportersD = []
+created_datesD = []
+updated_datesD = []
+assigneesD = []
+resolvedD = []
+
+with open('dataset3DModules.csv', mode='r', encoding='latin1') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        row_components = row['component'].strip().split(';')  # Split the components if they are separated by ';'
+        for component in row_components:
+            if not component:  # Check if the component is empty
+                component = 'Empty'
+            idsD.append(row['IssueId'].strip())
+            issue_typesD.append(row['type'].strip())
+            statusesD.append(row['status'].strip())
+            resolutionsD.append(row['resolution'].strip())
+            componentsD.append(component.strip())
+            severitiesD.append(row['priority'].strip())
+            reportersD.append(row['reporter'].strip())
+            created_datesD.append(row['created'].strip())
+            updated_datesD.append(row['assigned'].strip())
+            assigneesD.append(row['assignee'].strip())
+            resolvedD.append(row['resolved'].strip())
+
+
+idsW = []
+issue_typesW = []
+statusesW = []
+resolutionsW = []
+componentsW = []
+severitiesW = []
+reportersW = []
+created_datesW = []
+updated_datesW = []
+assigneesW = []
+resolvedW = []
+
+with open('dataset3WModules.csv', mode='r', encoding='latin1') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        row_components = row['component'].strip().split(';')  # Split the components if they are separated by ';'
+        for component in row_components:
+            if not component:  # Check if the component is empty
+                component = 'Empty'
+            idsW.append(row['issue_id'].strip())
+            issue_typesW.append(row['type'].strip())
+            statusesW.append(row['status'].strip())
+            resolutionsW.append(row['resolution'].strip())
+            componentsW.append(component.strip())
+            severitiesW.append(row['priority'].strip())
+            reportersW.append(row['reporter'].strip())
+            created_datesW.append(row['created'].strip())
+            updated_datesW.append(row['assigned'].strip())
+            assigneesW.append(row['assignee'].strip())
+            resolvedW.append(row['resolved'].strip())
+
+# Function to calculate fix response time
+def calculate_fix_response_time(ids, created_dates, resolved_dates, dataset_name):
+    response_times = []
+    for i in range(len(ids)):
+        if i < len(created_dates) and i < len(resolved_dates):
+            if created_dates[i] and resolved_dates[i]:
+                start_date_str = created_dates[i].split(' ')[0]
+                finish_date_str = resolved_dates[i].split(' ')[0]
+                start_date = datetime.strptime(start_date_str, '%Y/%m/%d')
+                finish_date = datetime.strptime(finish_date_str, '%Y/%m/%d')
+                response_time = (finish_date - start_date).days*24
+                response_times.append(response_time)
+
+    if response_times:
+        avg_response_time = sum(response_times) / len(response_times)
+        print(f"Average Fix Response Time for {dataset_name}: {avg_response_time:.2f} hours")
+    else:
+        print(f"No valid data found for {dataset_name}")
+
+# Calculate fix response time for each dataset
+calculate_fix_response_time(ids, created_dates, resolved, "Dataset 3")
+calculate_fix_response_time(idsA, created_datesA, resolvedA, "Dataset 3A")
+calculate_fix_response_time(idsD, created_datesD, resolvedD, "Dataset 3D")
+calculate_fix_response_time(idsC, created_datesC, resolvedC, "Dataset 3C")
+calculate_fix_response_time(idsW, created_datesW, resolvedW, "Dataset 3W")

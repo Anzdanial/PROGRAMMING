@@ -1,0 +1,3 @@
+/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_QUIZ/cmake-build-debug/CMakeFiles/OS_LAB_QUIZ.dir
+/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_QUIZ/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_QUIZ/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,0 @@
-D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir
-D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir
-D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_2/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

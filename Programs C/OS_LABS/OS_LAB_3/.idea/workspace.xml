@@ -21,14 +21,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="021f60b7-7465-4bb4-8c30-42b90e2540c7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_2/cmake-build-debug/CMakeFiles/OS_ASSIGNMENT_2.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_2/cmake-build-debug/CMakeFiles/OS_ASSIGNMENT_2.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_2/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_2/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_2/main" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_2/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_2/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/.cmake/api/v1/reply/cache-v2-788dca1413fca3d26ccc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-15610a471226350968b0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3e5add159a578ad20083.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/.cmake/api/v1/reply/index-2023-09-17T08-38-30-0647.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/.cmake/api/v1/reply/target-P1-Debug-e85ecc9481965752bf33.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/.cmake/api/v1/reply/target-P2-Debug-59abc2191791afd97011.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-9fd9bf05248a79bb1e9c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/compiler_depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/compiler_depend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/linkLibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P1.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/compiler_depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/compiler_depend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/linkLibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/P2.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_LAB_2/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/functions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.o" beforeDir="false" afterPath="$PROJECT_DIR$/functions.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.h" beforeDir="false" afterPath="$PROJECT_DIR$/header.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Java/P1/out/production/P1/C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Java/P1/out/production/P1/D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Java/P1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Programs Java/P1/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Programs Java/SCD_ASSIGNMENTS/SCD_ASSIGNMENT_2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Programs Java/SCD_ASSIGNMENTS/SCD_ASSIGNMENT_2/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Java/SCD_LABS/SCD_LAB_5/gpt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Programs Java/SCD_LABS/SCD_LAB_5/gpt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Java/SCD_LABS/SCD_LAB_5/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Programs Java/SCD_LABS/SCD_LAB_5/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Java/SWINGTESTINGGROUNDS/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Programs Java/SWINGTESTINGGROUNDS/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Python/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Python/TEST/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Python/TEST/.idea/TEST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Programs Python/SQE_ASSIGNMENT_2/.idea/SQE_ASSIGNMENT_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Python/TEST/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Python/TEST/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Python/TEST/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Python/TEST/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programs Python/TEST/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +117,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_QUIZ",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Anas's Data Win\PROGRAMMING\Programs C\OS_LABS\OS_LAB_3\EXEC_QUESTIONS" />
@@ -82,11 +145,6 @@
   </component>
   <component name="RunManager" selected="Makefile Target.makeFile">
     <configuration name="OS_LAB_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OS_LAB_3" TARGET_NAME="OS_LAB_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OS_LAB_3" RUN_TARGET_NAME="OS_LAB_3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -117,6 +175,8 @@
       <updated>1696326580619</updated>
       <workItem from="1696326583192" duration="19514000" />
       <workItem from="1697014712817" duration="3565000" />
+      <workItem from="1697265272596" duration="1041000" />
+      <workItem from="1697266765814" duration="1013000" />
     </task>
     <servers />
   </component>
