@@ -71,6 +71,25 @@ CMakeFiles/OS_ASSIGNMENT_2.dir/main.c.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/unistd.h
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+ /usr/include/x86_64-linux-gnu/bits/environments.h
+ /usr/include/x86_64-linux-gnu/bits/confname.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/mqueue.h
+ /usr/include/fcntl.h
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
+ /usr/include/x86_64-linux-gnu/bits/stat.h
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h
+ /usr/include/x86_64-linux-gnu/bits/mqueue.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
+ /usr/include/string.h
+ /usr/include/strings.h
 
 CMakeFiles/OS_ASSIGNMENT_2.dir/main1.c.o
  /mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_ASSIGNMENTS/OS_ASSIGNMENT_2/main1.c

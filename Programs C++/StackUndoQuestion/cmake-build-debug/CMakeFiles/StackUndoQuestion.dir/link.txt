@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/StackUndoQuestion.dir/main.cpp.o -o StackUndoQuestion 

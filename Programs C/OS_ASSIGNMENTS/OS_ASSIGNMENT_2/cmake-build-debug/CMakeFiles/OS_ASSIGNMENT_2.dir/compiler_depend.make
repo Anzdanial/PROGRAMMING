@@ -69,7 +69,26 @@ CMakeFiles/OS_ASSIGNMENT_2.dir/main.c.o: ../main.c \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/mqueue.h \
+  /usr/include/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/mqueue.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /usr/include/string.h \
+  /usr/include/strings.h
 
 CMakeFiles/OS_ASSIGNMENT_2.dir/main1.c.o: ../main1.c \
   /usr/include/stdc-predef.h \
@@ -143,9 +162,17 @@ CMakeFiles/OS_ASSIGNMENT_2.dir/main1.c.o: ../main1.c \
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/mqueue.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
@@ -153,13 +180,13 @@ CMakeFiles/OS_ASSIGNMENT_2.dir/main1.c.o: ../main1.c \
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/unistd.h:
+../main1.c:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
-../main1.c:
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/unistd.h:
 
 /usr/include/alloca.h:
 
@@ -215,6 +242,8 @@ CMakeFiles/OS_ASSIGNMENT_2.dir/main1.c.o: ../main1.c \
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
+/usr/include/mqueue.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
@@ -254,6 +283,8 @@ CMakeFiles/OS_ASSIGNMENT_2.dir/main1.c.o: ../main1.c \
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 

@@ -6,6 +6,27 @@
 #include <stdbool.h>
 #include <string.h>
 
+int *frequency;
+char **words;
+int wordsSize;
+char **uniqueWords;
+int uniqueSize;
+
+void *threadFrequencyCounter(void *arg) {
+    int *args = (int *)arg;
+    int start = args[0];
+    int end = args[1];
+
+    for (int i = start; i < end; i++) {
+        for (int j = 0; j < wordsSize; j++) {
+            if (strcmp(uniqueWords[i], words[j]) == 0) {
+                frequency[i]++;
+            }
+        }
+    }
+
+    pthread_exit(NULL);
+}
 
 const char * lowerCase(char* array){
     int size;
@@ -59,7 +80,6 @@ char ** storeWords(char array[], int size) {
     return words;
 }
 
-
 char ** uniqueWordCounter(char **words, int totalWords, int *duplicates, int *uniqueSize){
     char **uniqueWords;
     int counter = 0;
@@ -91,13 +111,20 @@ char ** uniqueWordCounter(char **words, int totalWords, int *duplicates, int *un
             k++;
         }
     }
-    for(int i = 0; i < (totalWords - counter); i++){
-        printf("%s \n",uniqueWords[i]);
-    }
     *duplicates = counter;
     *uniqueSize = totalWords - counter;
     return uniqueWords;
 }
+
+//void frequencyCounter(char **unique, char **words, int range, int totalWords){
+//    for(int i = 0; i < uniqueCount; i++){
+//        for(int j = 0; j < totalWords; j++) {
+//            if (strcmp(unique[i], words[j]) == 0) {
+//                frequency[i]++;
+//            }
+//        }
+//    }
+//}
 
 int main(int argc, char **argv) {
     if(argc < 2){
@@ -116,12 +143,37 @@ int main(int argc, char **argv) {
     size = read(fd, data, sizeof(data));
     data[size] = '\0';
 
-    int wordsSize = wordCounter(data, size);
-    char **words = storeWords(data, size);
+
+    wordsSize = wordCounter(data, size);
+    words = storeWords(data, size);
     int duplicates = 0, uniqueSize = 0;
-    char **uniqueWords = uniqueWordCounter(words,wordsSize, &duplicates,&uniqueSize);
-    for(int i = 0; i < uniqueSize; i++){
-        printf("%s \n",uniqueWords[i]);
+    uniqueWords = uniqueWordCounter(words,wordsSize, &duplicates,&uniqueSize);
+
+    frequency = (int*)malloc(uniqueSize*sizeof(int));
+//    frequencyCounter(uniqueWords, words, uniqueSize, wordsSize);
+
+    pthread_t threads[N];
+    int segmentSize = uniqueSize / N;
+
+    int **threadArgs = (int **)malloc(N * sizeof(int *));
+    for (int i = 0; i < N; i++) {
+        threadArgs[i] = (int *)malloc(2 * sizeof(int));
+        threadArgs[i][0] = i * segmentSize;
+        threadArgs[i][1] = (i + 1 == N) ? uniqueSize : (i + 1) * segmentSize;
+
+        pthread_create(&threads[i], NULL, threadFrequencyCounter, threadArgs[i]);
     }
+
+    for (int i = 0; i < N; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+
+    for(int i = 0; i < uniqueSize; i++) {
+        printf("The word is %s with count: ", uniqueWords[i]);
+        printf("%d \n", frequency[i]);
+    }
+
+
     return 0;
 }
