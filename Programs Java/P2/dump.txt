@@ -1,0 +1,68 @@
+import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Main {
+	public static void main(String[] args) {
+		JButton addButton = new JButton("Add");
+		JLabel label = new JLabel("Resource: ");
+		JTextField field = new JTextField("", 12);
+		JFrame frame = new JFrame();
+		JPanel topPanel = new JPanel();
+		JPanel bottomPanel = new JPanel();
+		JPanel mainPanel = new JPanel(new BorderLayout());
+		DefaultListModel<String> listModel = new DefaultListModel<>();
+		JList<String> list = new JList<>(listModel);
+		DefaultListModel<String> listModel1 = new DefaultListModel<>();
+		JList<String> list1 = new JList<>(listModel1);
+
+		addButton.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				String text = field.getText(); // Get the text from the text field
+				listModel.addElement(text); // Add the text to the list model
+				field.setText("");
+			}
+		});
+
+		list.addListSelectionListener(new ListSelectionListener() {
+			@Override
+			public void valueChanged(ListSelectionEvent e) {
+				if (!e.getValueIsAdjusting()) {
+					String selected = list.getSelectedValue();
+					if (selected != null) {
+						int index = list.getSelectedIndex();
+						for (int i = 0; i < listModel.size(); i++) {
+							if (listModel.getElementAt(i).contains("Currently Selected")) {
+								String previous = listModel.getElementAt(i).replace("Currently Selected: ", "");
+								listModel.set(i, previous);
+							}
+						}
+						listModel.set(index, "Currently Selected: " + selected);
+					}
+				}
+			}
+		});
+
+
+
+		topPanel.add(label);
+		topPanel.add(field);
+		topPanel.add(addButton);
+		bottomPanel.setLayout(new GridLayout(1, 2)); // Set the layout for the bottom panel
+		bottomPanel.add(new JScrollPane(list)); // Add a scroll pane for the first list
+		bottomPanel.add(new JScrollPane(list1)); // Add a scroll pane for the second list
+
+		mainPanel.add(topPanel, BorderLayout.NORTH);
+		mainPanel.add(bottomPanel, BorderLayout.CENTER);
+		frame.add(mainPanel);
+
+		frame.setSize(500, 250);
+		frame.setTitle("List Form");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Set the default close operation
+		frame.setVisible(true);
+	}
+}
