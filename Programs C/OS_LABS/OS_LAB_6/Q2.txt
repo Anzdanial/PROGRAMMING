@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <sys/syscall.h>
+
+int sum = 0;
+
+void *threadFunction(void *arg) {
+        int n = (intptr_t)arg;
+        sum += n;
+        return(NULL);
+//    pthread_exit((void *) (intptr_t )threadNum);
+}
+
+int main() {
+    int N;
+    printf("Enter the number of threads to create: ");
+    scanf("%d", &N);
+    pthread_t thread[N];
+    for (int i = 0; i <= N; i++) {
+        pthread_create(&thread[i], NULL, threadFunction, (void *)(intptr_t )i);
+    }
+    for (int i = 0; i <= N; i++) {
+        pthread_join(thread[i], NULL);
+    }
+    printf("The sum of threads is: %d \n", sum);
+    return 0;
+}

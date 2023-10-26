@@ -1,5 +1,5 @@
 //Question #4
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -38,7 +38,6 @@ int main(int argc, char **argv) {
 
     return 0;
 }
-*/
 
 
 //Question #3
@@ -68,15 +67,15 @@ int main(int argc, char **argv) {
 
 
 //Question #2
-
-#include <stdio.h>
-int main(int argc, char **argv) {
-    printf("Welcome to BS-SE Lab \n");
-    printf("The name of the Course is ");
-    for(int i = 1; i < argc; i++) {
-        printf("%s ", argv[i]);
-    }
-    printf("\n");
-    return 0;
-}
+//
+//#include <stdio.h>
+//int main(int argc, char **argv) {
+//    printf("Welcome to BS-SE Lab \n");
+//    printf("The name of the Course is ");
+//    for(int i = 1; i < argc; i++) {
+//        printf("%s ", argv[i]);
+//    }
+//    printf("\n");
+//    return 0;
+//}
 

@@ -3,44 +3,39 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <stdbool.h>
 
+//main1 file hai ye
+//Write File
+//This will run First
 int main() {
-    const char* pipeName = "/tmp/lab_5.1";
-    char buffer[1024];
-    mkfifo(pipeName, 0666);
-    int fd = open(pipeName, O_WRONLY);
+	const char* pipeName = "/tmp/ass_2.1";
+	char buffer[1024];
+	mkfifo(pipeName, 0666);
 
-    printf("Enter the Integer Array: ");
-    fgets(buffer, sizeof(buffer), stdin);
+	int fd = open(pipeName, O_WRONLY);
+	if (fd == -1) {
+		perror("open");
+		exit(EXIT_FAILURE);
+	}
 
-    int size = 0;
-    for (int i = 0; buffer[i] != '\0'; i++) {
-        if (buffer[i] >= '0' && buffer[i] <= '9') {
-            size++;
-        }
-    }
+	fgets(buffer,sizeof(buffer), stdin);
+	write(fd, buffer, sizeof(buffer));
+	close(fd);
 
-    int array[size];
-    int index = 0;
-    for (int i = 0; buffer[i] != '\0'; i++) {
-        if (buffer[i] >= '0' && buffer[i] <= '9') {
-            array[index] = buffer[i] - '0';
-            printf("%d \n", array[index]);
-            index++;
-        }
-    }
+	const char* pipeName1 = "/tmp/ass_2.2";
+	double result = 0;
+	int fd1 = open(pipeName1, O_RDONLY);
 
-    write(fd, &size, sizeof(int)); // Sending the size of the array
-    write(fd, array, sizeof(int) * size); // Sending the array
-    close(fd);
+	if (fd1 == -1) {
+		perror("open");
+		exit(EXIT_FAILURE);
+	}
 
+	read(fd1, &result, sizeof(result));
+	close(fd1);
 
-    fd = open(pipeName, O_RDONLY);
-    int sum;
-    read(fd, &sum, sizeof(sum));
-    close(fd);
+	printf("The result is %f \n", result);
 
-    printf("Sum received from calculator: %d\n", sum);
-
-    return 0;
+	return 0;
 }

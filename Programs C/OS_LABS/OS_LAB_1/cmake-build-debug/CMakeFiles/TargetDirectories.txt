@@ -1,9 +1,0 @@
-<<<<<<< HEAD
-C:/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/CMakeFiles/OS_LAB_1.dir
-C:/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-=======
-D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/CMakeFiles/OS_LAB_1.dir
-D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/PROGRAMMING/Programs C/OS_LABS/OS_LAB_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
->>>>>>> 9a09c12c4c273258c41f95eb1df37a41f4de543d
