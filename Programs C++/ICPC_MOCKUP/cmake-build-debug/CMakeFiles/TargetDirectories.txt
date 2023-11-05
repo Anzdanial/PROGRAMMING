@@ -1,0 +1,3 @@
+/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C++/ICPC_MOCKUP/cmake-build-debug/CMakeFiles/ICPC_MOCKUP.dir
+/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C++/ICPC_MOCKUP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C++/ICPC_MOCKUP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

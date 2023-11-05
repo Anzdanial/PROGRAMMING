@@ -5,12 +5,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class componentListener implements ListSelectionListener, ActionListener {
+class componentListenerResource implements ListSelectionListener, ActionListener {
 	private DefaultListModel<String> listModel;
 	private JList<String> list;
 	private JTextField field;
 
-	componentListener(JList<String> list, DefaultListModel<String> listModel, JTextField field) {
+	componentListenerResource(JList<String> list, DefaultListModel<String> listModel, JTextField field) {
 		this.list = list;
 		this.listModel = listModel;
 		this.field = field;
@@ -56,7 +56,7 @@ public class Main{
 		layout.putConstraint(SpringLayout.WEST, scrollPane, 5, SpringLayout.WEST, contentPane);
 		layout.putConstraint(SpringLayout.NORTH, scrollPane, 50, SpringLayout.NORTH, contentPane);
 
-		componentListener listener = new componentListener(myList,listModel,field);
+		componentListenerResource listener = new componentListenerResource(myList,listModel,field);
 
 		button.addActionListener(listener);
 		myList.addListSelectionListener(listener);

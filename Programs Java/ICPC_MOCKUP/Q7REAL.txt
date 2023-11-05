@@ -1,0 +1,43 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int testCases = scanner.nextInt();
+		scanner.nextLine(); // consume the newline character
+
+		for (int i = 0; i < testCases; i++) {
+			String question = scanner.nextLine();
+			double result = convertMetricToEnglish(question);
+			System.out.println(result);
+		}
+		scanner.close();
+	}
+
+	public static double convertMetricToEnglish(String question) {
+		String[] parts = question.split(" ");
+		if (parts.length != 7 || !parts[2].equals("in") || !parts[4].equals("in")) {
+			return -1; // invalid conversion
+		}
+
+		double value = Double.parseDouble(parts[5]);
+		String unitFrom = parts[6].toLowerCase();
+		String unitTo = parts[1].toLowerCase();
+
+		// Map for metric-to-English conversion factors
+		Map<String, Double> conversionFactors = new HashMap<>();
+		conversionFactors.put("meters", 39.37);
+		conversionFactors.put("centimeters", 0.393701);
+		conversionFactors.put("liters", 1.05668821);
+		conversionFactors.put("quarts", 1.0); // 1 quart is already in the English system
+
+		if (conversionFactors.containsKey(unitFrom) && conversionFactors.containsKey(unitTo)) {
+			double conversionFactor = conversionFactors.get(unitFrom);
+			return value * conversionFactor;
+		} else {
+			return -1; // invalid conversion
+		}
+	}
+}

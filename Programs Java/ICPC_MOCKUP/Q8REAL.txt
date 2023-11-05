@@ -1,0 +1,43 @@
+import java.util.*;
+
+public class Main {
+	static int count = 0;
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int testCases = scanner.nextInt();
+
+		for (int i = 0; i < testCases; i++) {
+			int peopleCount = scanner.nextInt();
+			List<List<Integer>> departments = new ArrayList<>();
+			for (int j = 0; j < peopleCount; j++) {
+				int deptCount = scanner.nextInt();
+				List<Integer> temp = new ArrayList<>();
+				for (int k = 0; k < deptCount; k++) {
+					temp.add(scanner.nextInt());
+				}
+				departments.add(temp);
+			}
+
+			count = 0;
+			findUniqueArrangements(departments, new HashSet<>(), 0);
+			System.out.println(count);
+		}
+		scanner.close();
+	}
+
+	public static void findUniqueArrangements(List<List<Integer>> departments, Set<Integer> used, int index) {
+		if (index == departments.size()) {
+			count++;
+			return;
+		}
+
+		List<Integer> current = departments.get(index);
+		for (int department : current) {
+			if (!used.contains(department)) {
+				used.add(department);
+				findUniqueArrangements(departments, used, index + 1);
+				used.remove(department);
+			}
+		}
+	}

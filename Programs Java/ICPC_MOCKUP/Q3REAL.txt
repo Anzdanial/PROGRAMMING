@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int t = scanner.nextInt(); // Number of test cases
+		int threshold = scanner.nextInt(); // Threshold value for the test case
+		for (int i = 0; i < t; i++) {
+			int n = scanner.nextInt(); // Number of packets per second
+			int[] packets = new int[n];
+			for (int j = 0; j < n; j++) {
+				packets[j] = scanner.nextInt();
+			}
+			for (int j = 2; j < n; j++) {
+				int firstOrderDiff = Math.abs(packets[j] - packets[j - 1]);
+				int secondOrderDiff = Math.abs(firstOrderDiff - Math.abs(packets[j - 1] - packets[j - 2]));
+				if (secondOrderDiff >= threshold) {
+					System.out.print("1 ");
+				} else {
+					System.out.print("0 ");
+				}
+			}
+			System.out.println();
+		}
+		scanner.close();
+	}
+}

@@ -8,7 +8,7 @@ public class Main {
 		JButton[] numberButtons = new JButton[10];
 		JButton[] operatorButtons = new JButton[4];
 		JButton equalsButton = new JButton("=");
-		JTextField field = new JTextField("");
+		JTextField okfield = new JTextField("");
 
 
 		JPanel mainPanel = new JPanel(new BorderLayout());
