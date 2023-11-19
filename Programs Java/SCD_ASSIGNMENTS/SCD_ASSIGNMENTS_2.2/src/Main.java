@@ -11,6 +11,8 @@ import View.TaskView;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 class AdditionForm {
@@ -43,16 +45,61 @@ class AdditionForm {
 
 
 public class Main {
-
+//	public void fileReader() throws IOException {
+//		char[] array = new char[1024];
+//		int characterRead = 0;
+//		try {
+//			FileReader input = new FileReader("taskFile.txt");
+//			characterRead = input.read(array);
+//			input.close();
+//		} catch (Exception e) {
+//			e.getStackTrace();
+//		}
+//		char[] arrayNew = new char[characterRead];
+//		for (int i = 0; i < characterRead; i++)
+//			arrayNew[i] = array[i];
+//		String inputString = new String(arrayNew);
+//		String[] result = inputString.split("\n");
+//
+//		for (int i = 0; i < result.length; i++) {
+//			result[i] = result[i].trim();
+//		}
+//
+//
+//		for (int i = 0; i < result.length; i++) {
+//			String[] parts = result[i].split("\\|");
+//			if (parts.length == 2) {
+//				String name = parts[0].trim();
+//				setName(name);
+//				String []skillsSet = parts[1].trim().split(", ");
+//
+//				for (int j = 0; j < skillsSet.length; j++) {
+//					String[] skillParts = skillsSet[j].split(":");
+//					if (skillParts.length == 2) {
+//						String skill = skillParts[0].trim();
+//						String year = skillParts[1].trim();
+//						int number = 0;
+//						try {
+//							number = Integer.parseInt(year);
+//						} catch (NumberFormatException ex) {
+//							System.out.println("Before Failure, Current: " + j);
+//							ex.printStackTrace();
+//						}
+//						setSkill(skill,number,i);
+//					}
+//				}
+//			}
+//		}
+//	}
 
 	public static void main(String[] args) {
 		ArrayList<skillSet> resources = new ArrayList<>();
-		addPreResource(resources);
+//		addPreResource(resources);
 		ResourceView resourceView = new ResourceView();
 		ResourceController resourceController = new ResourceController(resourceView, resources);
 
 		ArrayList<skillSet> tasks = new ArrayList<>();
-		addPreTasks(tasks);
+//		addPreTasks(tasks);
 		TaskView taskView = new TaskView();
 		TaskController taskController = new TaskController(taskView, tasks);
 
