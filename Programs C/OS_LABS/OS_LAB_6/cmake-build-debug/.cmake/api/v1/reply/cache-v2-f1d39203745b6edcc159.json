@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_6/cmake-build-debug"
+			"value" : "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_6/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_6"
+			"value" : "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_6"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_6/cmake-build-debug"
+			"value" : "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_6/cmake-build-debug"
 		},
 		{
 			"name" : "OS_LAB_6_IS_TOP_LEVEL",
@@ -1087,7 +1087,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_6"
+			"value" : "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_6"
 		},
 		{
 			"name" : "ProcessorCount_cmd_nproc",

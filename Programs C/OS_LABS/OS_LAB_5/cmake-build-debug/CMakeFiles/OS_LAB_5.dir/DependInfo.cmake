@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_5/main.c" "CMakeFiles/OS_LAB_5.dir/main.c.o" "gcc" "CMakeFiles/OS_LAB_5.dir/main.c.o.d"
-  "/mnt/c/Anas's Data Win/PROGRAMMING/Programs C/OS_LABS/OS_LAB_5/main1.c" "CMakeFiles/OS_LAB_5.dir/main1.c.o" "gcc" "CMakeFiles/OS_LAB_5.dir/main1.c.o.d"
+  "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_5/main.c" "CMakeFiles/OS_LAB_5.dir/main.c.o" "gcc" "CMakeFiles/OS_LAB_5.dir/main.c.o.d"
+  "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_5/main1.c" "CMakeFiles/OS_LAB_5.dir/main1.c.o" "gcc" "CMakeFiles/OS_LAB_5.dir/main1.c.o.d"
   )
 
 # Targets to which this target links.
