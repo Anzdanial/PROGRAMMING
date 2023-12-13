@@ -1,0 +1,60 @@
+class EvenOddPrinter {
+	private final int MAX = 10;
+	private int number = 1;
+	private final Object lock = new Object();
+
+	public static void main(String[] args) {
+		EvenOddPrinter printer = new EvenOddPrinter();
+		Thread t1 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				printer.printEven();
+			}
+		});
+		Thread t2 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				printer.printOdd();
+			}
+		});
+
+		t1.start();
+		t2.start();
+	}
+
+	public void printEven() {
+		while (number < MAX) {
+			synchronized (lock) {
+				while (number % 2 != 0) {
+					try {
+						lock.wait();
+					} catch (InterruptedException e) {
+						Thread.currentThread().interrupt();
+						System.out.println("Thread interrupted");
+					}
+				}
+				System.out.println("Even: " + number);
+				number++;
+				lock.notifyAll();
+			}
+		}
+	}
+
+	public void printOdd() {
+		while (number < MAX) {
+			synchronized (lock) {
+				while (number % 2 == 0) {
+					try {
+						lock.wait();
+					} catch (InterruptedException e) {
+						Thread.currentThread().interrupt();
+						System.out.println("Thread interrupted");
+					}
+				}
+				System.out.println("Odd: " + number);
+				number++;
+				lock.notifyAll();
+			}
+		}
+	}
+}

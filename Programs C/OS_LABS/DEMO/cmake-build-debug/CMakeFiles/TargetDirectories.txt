@@ -1,0 +1,3 @@
+/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/DEMO/cmake-build-debug/CMakeFiles/DEMO.dir
+/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/DEMO/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/DEMO/cmake-build-debug/CMakeFiles/rebuild_cache.dir

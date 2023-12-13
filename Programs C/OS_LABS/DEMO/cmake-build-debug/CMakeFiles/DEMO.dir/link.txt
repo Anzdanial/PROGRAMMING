@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/DEMO.dir/main.c.o CMakeFiles/DEMO.dir/main1.c.o -o DEMO 
