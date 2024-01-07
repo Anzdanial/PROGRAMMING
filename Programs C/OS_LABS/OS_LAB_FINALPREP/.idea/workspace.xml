@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="OS_LAB_FINALPREP" targetName="OS_LAB_FINALPREP" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="364dc69f-7fdb-464f-83da-b96882c8ef6e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/.cmake/api/v1/reply/cache-v2-71d6112441f282e6b2cd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/.cmake/api/v1/reply/cmakeFiles-v1-36218fce0dff56c5bbad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/.cmake/api/v1/reply/codemodel-v2-01a2b1795bcea726e367.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/.cmake/api/v1/reply/index-2023-12-08T08-56-46-0384.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/.cmake/api/v1/reply/target-OS_ASSIGNMENT_3-Debug-e364830fcf664441c25e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/.cmake/api/v1/reply/toolchains-v1-27d6a4c29eeab33ce62a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/3.27.0/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/3.27.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/3.27.0/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/3.27.0/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/3.27.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/3.27.0/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/clion-Debug-MinGW-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/clion-Debug-MinGW-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug-mingw/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS_ASSIGNMENTS/OS_ASSIGNMENT_3/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1.4" />
+  </component>
+  <component name="ProjectId" id="2aWWAN9rrMv4KC3PPMbBlY9bqpH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "structure.view.defaults.are.configured": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OS_LAB_FINALPREP" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OS_LAB_FINALPREP" TARGET_NAME="OS_LAB_FINALPREP" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OS_LAB_FINALPREP" RUN_TARGET_NAME="OS_LAB_FINALPREP">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="364dc69f-7fdb-464f-83da-b96882c8ef6e" name="Changes" comment="" />
+      <created>1704434670273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704434670273</updated>
+      <workItem from="1704434672705" duration="5506000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+</project>
