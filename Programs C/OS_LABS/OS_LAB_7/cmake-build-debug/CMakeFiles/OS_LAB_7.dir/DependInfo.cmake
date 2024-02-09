@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_7/main.c" "CMakeFiles/OS_LAB_7.dir/main.c.o" "gcc" "CMakeFiles/OS_LAB_7.dir/main.c.o.d"
+  "C:/Anas's Data/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_7/main.c" "CMakeFiles/OS_LAB_7.dir/main.c.obj" "gcc" "CMakeFiles/OS_LAB_7.dir/main.c.obj.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

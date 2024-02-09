@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <style>
+        .container {
+            max-width: 1000px; /* Increased width */
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ffffff; /* White background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: auto; /* Added overflow for child elements */
+        }
+        .friends {
+            width: 30%; /* Adjusted width */
+            float: left;
+            background-color: #3fe0d0;
+            max-width: 200px;
+            border: 5px solid;
+            border-color: #048687;
+            padding: 10px; /* Added padding */
+            margin-right: 20px; /* Added margin for spacing */
+        }
+        .friends p {
+            font-size: 26pt;
+            color: #20b2ac;
+            text-align: left;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+        .friends ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .friends li p {
+            margin: 5px;
+        }
+        .journal-entry {
+            width: 65%; /* Adjusted width */
+            float: left;
+            padding-bottom: 50px;
+            margin-top: 2%;
+            overflow: auto;
+        }
+        .journal-entry table {
+            width: 100%;
+        }
+        .journal-entry td {
+            vertical-align: top;
+        }
+        .journal-entry img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div style="background-color: #a8f0ef; max-width: 1000px; padding: 10px; box-sizing: border-box;"> <!-- Adjusted max-width and added padding -->
+        <h1 style="color: #39afa7; text-align: right;">Victoria's Journal</h1>
+        <h2 style="color: #39afa7; text-align: right;">So fresh and so clean</h2>
+    </div>
+    <div class="friends">
+        <p>Friends</p>
+        <ul>
+            <li><p style="color: #e09a09">390 Buddies</p></li>
+            <li><p style="color: #fafafa">Big Will</p></li>
+            <li><p style="color: #e09a09">Conan the Librarian</p></li>
+        </ul>
+    </div>
+    <div class="journal-entry">
+        <table>
+            <tr>
+                <td style="width: 50%;">
+                    <p style="font-size: 22pt; text-decoration: underline #6d6bd5 dashed; color: #20b2ac; text-align: left; margin-left: 25px; margin-top: 5px; margin-bottom: 25px;">
+                        04/09/08: Spatulas
+                    </p>
+                    <p style="font-size: 14pt; color: #e09a09; margin-left: 25px;">Yesterday, I went to the store and got some much needed spatulas! (What better way to say I love myself than to buy myself a spatula?)</p>
+                </td>
+                <td style="width: 50%;">
+                    <img src="https://media.istockphoto.com/id/653302640/photo/black-spatula.webp?s=2048x2048&w=is&k=20&c=dxWqDyK_AMvKJWfzGpECZnhGCrrWK_O7zFfn6ojUVe4" alt="Spatulas">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="journal-entry">
+        <table>
+            <tr>
+                <td style="width: 50%;">
+                    <p style="font-size: 22pt; text-decoration: underline #6d6bd5 dashed; color: #20b2ac; text-align: left; margin-left: 25px; margin-top: 5px; margin-bottom: 25px;">
+                        04/08/08: Cookie Cupcakes
+                    </p>
+                    <p style="font-size: 14pt; color: #e09a09; margin-left: 25px;">My favorite cartoon character is Cookie, and my favorite dessert is cupcakes. So Cookie Cupcakes are the best of both worlds. Did you know? Cookie once said, "Sometimes I think what is love, and then I think love is what a cookie is for. I'd give up the last cookie for you." I wonder if the same applies to cupcakes? (If so, I don't think I can ever love ANYONE!)</p>
+                </td>
+                <td style="width: 50%;">
+                    <img src="https://thefoodcharlatan.com/wp-content/uploads/2023/03/Cookie-Dough-Cupcakes-19-1024x1536.jpg" alt="Cookie Cupcakes">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ffffff; /* White background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div style="background-color: #a8f0ef; max-width: 800px">
+        <h1 style="color: #39afa7; text-align: right;">Victoria's Journal</h1>
+        <h2 style="color: #39afa7; text-align: right;">So fresh and so clean</h2>
+    </div>
+    <div style="width: 100%;">
+        <div style="width: 50%; float: left; background-color: #3fe0d0; max-width: 200px; border:5px solid; border-color: #048687;">
+            <p style="font-size: 26pt; color: #20b2ac; text-align: left; margin-left: 25px; margin-top: 5px; margin-bottom: 25px;">
+                Friends
+            </p>
+            <ul>
+                <li><p style="color: #e09a09">390 Buddies</p></li>
+                <li><p style="color: #fafafa">Big Will</p></li>
+                <li><p style="color: #e09a09">Conan the Librarian</p></li>
+            </ul>
+        </div>
+        <div style="margin-left:32%; background-color: #e8fafb; max-width: 500px; border:5px solid; border-color: #048687; padding-bottom: 50px;">
+            <table>
+                <tr>
+                    <td style="width: 50%; height: auto;">
+                        <p style="font-size: 22pt; text-decoration: underline #6d6bd5 dashed;  color: #20b2ac; text-align: left; margin-left: 25px; margin-top: 5px; margin-bottom: 25px;">
+                            04/09/08: Spatulas
+                        </p>
+                        <p style="margin-left: 10px; font-size: 14pt; color: #e09a09;">Yesterday, I went to the store and got some much needed spatulas! (what better way to say I love myself than to buy myself to spatula?)</p>
+                    </td>
+                    <td style="text-align: center; width: 40%; height: auto;">
+                        <img src="https://media.istockphoto.com/id/653302640/photo/black-spatula.webp?s=2048x2048&w=is&k=20&c=dxWqDyK_AMvKJWfzGpECZnhGCrrWK_O7zFfn6ojUVe4=" style="max-width: 50%; height: auto;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="margin-left:32%; margin-top: 2%; background-color: #e8fafb; max-width: 500px; border:5px solid; border-color: #048687; padding-bottom: 50px;">
+        <table>
+            <tr>
+                <td style="width: 40%; height: auto;">
+                    <p style="font-size: 22pt; text-decoration: underline #6d6bd5 dashed;  color: #20b2ac; text-align: left; margin-left: 25px; margin-top: 5px; margin-bottom: 25px;">
+                        04/08/08: Cookie Cupcakes
+                    </p>
+                    <p style="margin-left: 10px; font-size: 14pt; color: #e09a09;">My favorite cartoon character is cookie, and my favorite dessert is cupcakes. So Cookie Cupcakes are best of both the worlds. Did you know? Cookie character once said, "Sometimes me think what is love, and then me think love is what cookie is for. Me give up the last cookie for you." I wonder if the same applies for the cupcakes? (If so, I don't think I can ever love ANYONE!)</p>
+                </td> <!-- Empty left side -->
+                <td style="text-align: center; width: 10%; height: auto;">
+                    <!-- You can keep the same image or replace it with another content -->
+                    <img src="https://thefoodcharlatan.com/wp-content/uploads/2023/03/Cookie-Dough-Cupcakes-19-1024x1536.jpg" style="max-width: 50%; height: auto;">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

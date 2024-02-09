@@ -1,3 +1,0 @@
-/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_9/cmake-build-debug/CMakeFiles/OS_LAB_9.dir
-/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_9/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_9/cmake-build-debug/CMakeFiles/rebuild_cache.dir

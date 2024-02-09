@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/OS_LAB_7.dir/main.c.o"
-  "CMakeFiles/OS_LAB_7.dir/main.c.o.d"
-  "OS_LAB_7"
+  "CMakeFiles/OS_LAB_7.dir/main.c.obj"
+  "CMakeFiles/OS_LAB_7.dir/main.c.obj.d"
+  "OS_LAB_7.exe"
+  "OS_LAB_7.exe.manifest"
   "OS_LAB_7.pdb"
+  "libOS_LAB_7.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

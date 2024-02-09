@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_FINAL
+# Install script for directory: /mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_FINAL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_FINAL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_FINAL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

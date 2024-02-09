@@ -1,0 +1,3 @@
+/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C++/CLION/BLEH/cmake-build-debug/CMakeFiles/BLEH.dir
+/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C++/CLION/BLEH/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C++/CLION/BLEH/cmake-build-debug/CMakeFiles/rebuild_cache.dir

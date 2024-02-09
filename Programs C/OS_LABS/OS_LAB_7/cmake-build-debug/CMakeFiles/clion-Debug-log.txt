@@ -1,10 +1,19 @@
-C:\WINDOWS\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/c/Anas'\"'\"'s Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_7/cmake-build-debug' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S '/mnt/c/Anas'\"'\"'s Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_7' -B '/mnt/c/Anas'\"'\"'s Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_7/cmake-build-debug'"
--- The C compiler identification is GNU 11.4.0
+"C:\Users\anzda\AppData\Local\Programs\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Anas's Data\REPOS\PROGRAMMING\Programs C\OS_LABS\OS_LAB_7" -B "C:\Anas's Data\REPOS\PROGRAMMING\Programs C\OS_LABS\OS_LAB_7\cmake-build-debug"
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- The C compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
+-- Check for working C compiler: C:/Users/anzda/AppData/Local/Programs/CLion Nova/bin/mingw/bin/gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: /mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_7/cmake-build-debug
+-- Configuring done (4.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Anas's Data/REPOS/PROGRAMMING/Programs C/OS_LABS/OS_LAB_7/cmake-build-debug

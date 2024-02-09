@@ -39,6 +39,6 @@ void shellCommandCall() {
 
 int main() {
 //	fileRedirection();
-shellCommandCall();
+	shellCommandCall();
 	return 0;
 }
