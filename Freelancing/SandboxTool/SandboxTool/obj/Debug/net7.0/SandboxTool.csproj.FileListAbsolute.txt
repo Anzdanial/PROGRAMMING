@@ -1,0 +1,15 @@
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\bin\Debug\net7.0\SandboxTool.exe
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\bin\Debug\net7.0\SandboxTool.deps.json
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\bin\Debug\net7.0\SandboxTool.runtimeconfig.json
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\bin\Debug\net7.0\SandboxTool.dll
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\bin\Debug\net7.0\SandboxTool.pdb
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\SandboxTool.csproj.AssemblyReference.cache
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\SandboxTool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\SandboxTool.AssemblyInfoInputs.cache
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\SandboxTool.AssemblyInfo.cs
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\SandboxTool.csproj.CoreCompileInputs.cache
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\SandboxTool.dll
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\refint\SandboxTool.dll
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\SandboxTool.pdb
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\SandboxTool.genruntimeconfig.cache
+C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool\obj\Debug\net7.0\ref\SandboxTool.dll

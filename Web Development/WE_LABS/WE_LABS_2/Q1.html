@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continental Hotel Reservation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0; /* Grey background */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #e0e0e0; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-top: 3px solid #737272;
+            border-left: 3px solid #737272;
+            border-right: 3px solid #000000;
+            border-bottom: 3px solid #000000;
+            background-color: #cce5ff; /* Light blue background */
+            border-collapse: separate;
+        }
+        table td {
+            text-align: left;
+            padding: 10px;
+            border-top: 3px solid #000000;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #737272;
+            border-bottom: 3px solid #737272;
+        }
+        table th {
+            text-align: right;
+            font-weight: bold;
+            padding: 10px;
+            border-top: 3px solid #000000;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #737272;
+            border-bottom: 3px solid #737272;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+        .btn-send{
+            width: 15%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Continental Hotel Reservation Form</h1>
+    <form>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" required name="name" placeholder="Enter your name" size="35px"></td>
+            </tr>
+            <tr>
+                <th>eMail</th>
+                <td><input type="email" name="email" required placeholder="Enter your eMail" size="35px"></td>
+            </tr>
+            <tr>
+                <th>Mobile No</th>
+                <td><input type="tel" name="phone" required placeholder="Enter your cell number" size="35px"></td>
+            </tr>
+            <tr>
+                <th>Arrival Time</th>
+                <td><input type="text" name="arrtime" required placeholder="Enter your arrival time" width="10px"></td>
+            </tr>
+            <tr>
+                <th>Departure</th>
+                <td><input type="text" name="dep1" required style="margin-right: 10px; margin-bottom: 5px" size="23px"><input type="text" name="dep2" required size="23px"></td>
+            </tr>
+            <tr>
+                <th>Room Type</th>
+                <td><input type="radio" name="room" required>Single
+                    <input type="radio" name="room" required>Double <br>
+                    <input type="radio" name="room" required>Presidential Suite
+                </td>
+            </tr>
+            <tr>
+                <th>Preferences</th>
+                <td><input type="checkbox" name="preferences" required>Non-Smoking <br>
+                    <input type="checkbox" name="preferences" required>Internet <br>
+                    <input type="checkbox" name="preferences" required>Firm Mattress
+                </td>
+            </tr>
+            <tr>
+                <th>Mode of Payment</th>
+                <td><input type="checkbox" name="mode" required>Cash
+                    <input type="checkbox" name="mode" required>Check <br>
+                    <input type="checkbox" name="mode" required>Credit Card
+                <select name="cards" id="cardsselect" placeholder="Select Card">
+                    <option value="" disabled selected>Select Card</option>
+                    <option value="PayPal">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                </select></td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center"><button type="submit" class="btn-send">Send Data</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<table>
+            <tr>
+                <td style="width: 40%; height: auto;">
+                    <h1 style="font-size: 22pt; color: #20b2ac; text-align: left; margin-left: 25px; margin-top: 5px; margin-bottom: 25px;"><span style="text-decoration: underline #6d6bd5 dashed;">04/08/08:</span>Cookie Cupcakes</h1>
+                    <p style="margin-left: 10px; font-size: 14pt; color: #e09a09;">My favorite cartoon character is cookie, and my favorite dessert is cupcakes. So Cookie Cupcakes are best of both the worlds. Did you know? Cookie character once said, "Sometimes me think what is love, and then me think love is what cookie is for. Me give up the last cookie for you." I wonder if the same applies for the cupcakes? (If so, I don't think I can ever love ANYONE!)</p>
+                </td> <!-- Empty left side -->
+                <td style="text-align: center; width: 10%; height: auto;">
+                    <img src="https://thefoodcharlatan.com/wp-content/uploads/2023/03/Cookie-Dough-Cupcakes-19-1024x1536.jpg" style="max-width: 50%; height: auto;">
+                </td>
+            </tr>
+        </table>
