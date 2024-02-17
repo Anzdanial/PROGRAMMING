@@ -1,0 +1,81 @@
+# Convert the 'datetime' column to datetime format
+full_df['datetime'] = pd.to_datetime(full_df['datetime'])
+
+# Sort the DataFrame by datetime
+full_df.sort_values(by='datetime', inplace=True)
+
+# Plotting line graphs for each numerical column
+numerical_cols = full_df.select_dtypes(include=['float64']).columns
+
+fig, ax = plt.subplots()
+plt.subplots_adjust(bottom=0.2)  # Adjust the bottom margin to make room for buttons
+
+# Initial plot
+current_col_idx = 0
+line, = ax.plot(full_df['datetime'], full_df[numerical_cols[current_col_idx]], color='blue')
+ax.set_title(f'{numerical_cols[current_col_idx]} Over Time in Brighton')
+ax.set_xlabel('Date')
+ax.set_ylabel(numerical_cols[current_col_idx])
+ax.grid(True)
+
+# Function to handle the "Next" button click event
+def next_plot(event):
+	global current_col_idx
+	current_col_idx = (current_col_idx + 1) % len(numerical_cols)
+	update_plot()
+
+# Function to handle the "Previous" button click event
+def prev_plot(event):
+	global current_col_idx
+	current_col_idx = (current_col_idx - 1) % len(numerical_cols)
+	update_plot()
+
+# Function to update the plot
+def update_plot():
+	ax.clear()
+	ax.plot(full_df['datetime'], full_df[numerical_cols[current_col_idx]], color='blue')
+	ax.set_title(f'{numerical_cols[current_col_idx]} Over Time in Brighton')
+	ax.set_xlabel('Date')
+	ax.set_ylabel(numerical_cols[current_col_idx])
+	ax.grid(True)
+	fig.canvas.draw()
+
+# Create "Next" button
+axnext = plt.axes([0.81, 0.05, 0.1, 0.075])
+bnext = Button(axnext, 'Next')
+bnext.on_clicked(next_plot)
+
+# Create "Previous" button
+axprev = plt.axes([0.7, 0.05, 0.1, 0.075])
+bprev = Button(axprev, 'Previous')
+bprev.on_clicked(prev_plot)
+
+plt.show()
+
+
+
+///////////////////////////////////////
+
+
+
+# Get the column names
+numerical_cols = summary_stats.columns
+
+# Plot histograms for each numerical column with summary statistics
+plt.figure(figsize=(14, 8))
+
+for col in numerical_cols:
+	plt.hist(full_df[col], bins=20, alpha=0.5, label=col)
+	plt.axvline(x=summary_stats.loc['max', col], color='red', linestyle='--', linewidth=1)
+	plt.axvline(x=summary_stats.loc['min', col], color='blue', linestyle='--', linewidth=1)
+	plt.axvline(x=summary_stats.loc['50%', col], color='green', linestyle='--', linewidth=1)
+	plt.axvline(x=summary_stats.loc['mean', col], color='orange', linestyle='--', linewidth=1)
+	plt.axvline(x=full_df[col].mode().iloc[0], color='purple', linestyle='--', linewidth=1)
+
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.title('Histograms with Summary Statistics')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()

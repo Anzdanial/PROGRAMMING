@@ -1,0 +1,111 @@
+import pandas as pd
+import os
+
+# Specify the directory where your CSV files are located
+directory = r'C:\Users\anzda\OneDrive\Desktop\Freelance Work\weatherdata_for_students'
+
+# Initialize an empty list to store DataFrames from each CSV file
+dataframes = []
+
+# Iterate over each CSV file in the directory
+for filename in os.listdir(directory):
+    if filename.startswith("brighton"):
+        # Load the CSV file into a DataFrame
+        filepath = os.path.join(directory, filename)
+        try:
+            df = pd.read_csv(filepath)
+            # Append the DataFrame to the list
+            dataframes.append(df)
+        except Exception as e:
+            print(f"Error reading {filename}: {e}")
+
+# Check if any DataFrame was loaded
+if len(dataframes) == 0:
+    print("No CSV files were found or none could be loaded.")
+else:
+    # Concatenate all DataFrames into a single DataFrame
+    combined_df = pd.concat(dataframes, ignore_index=True)
+
+# Now combined_df contains your entire dataset
+print(combined_df.head())
+print(combined_df.info())
+print(combined_df.describe())
+
+
+
+
+
+
+import os
+import pandas as pd
+
+# Directory where the dataset is located
+data_dir = r"C:\Users\anzda\OneDrive\Desktop\Freelance Work\weatherdata_for_students"
+
+# Note: Opening and Using all files since the dataset for Brighton is small.
+# List all files in the directory that start with "brighton"
+file_names = [os.path.join(data_dir, f) for f in os.listdir(data_dir) if f.startswith("brighton")]
+
+# Count the number of files opened/used
+num_files_used = len(file_names)
+
+# Load all files into a single DataFrame
+dfs = []
+for file_name in file_names:
+    df = pd.read_csv(file_name)
+    dfs.append(df)
+
+full_df = pd.concat(dfs)
+
+# Drop columns with numbered names
+full_df.drop(full_df.filter(regex='^\d+$').columns, axis=1, inplace=True)
+
+# Display basic information about the dataset
+print("Number of files opened/used:", num_files_used)
+print("\nDataset Info:")
+print(full_df.info())
+
+# Display first few rows of the dataset
+print("\nFirst few rows of the dataset:")
+print(full_df.head())
+
+# Check for missing values
+print("\nMissing values:")
+print(full_df.isnull().sum())
+
+
+# Clean and preprocess the data set
+# Here you would handle missing values, outliers, data formatting, etc.
+# For example, you can fill missing values with appropriate methods like mean, median, or mode
+# You can also handle outliers based on domain knowledge or statistical methods
+
+# Research on adequate thresholds for surplus of energy
+# This would involve looking into external sources or industry standards
+# and determining what thresholds would indicate a surplus of energy
+
+
+
+
+# Handling missing values for numerical columns
+# You can choose to fill missing numerical values with mean or median
+# Here, we'll fill missing values with the median
+numerical_cols = full_df.select_dtypes(include=['float64']).columns
+full_df[numerical_cols] = full_df[numerical_cols].fillna(full_df[numerical_cols].median())
+
+# Handling missing values for categorical columns
+# You can replace missing categorical values with a placeholder or mode
+# Here, we'll fill missing categorical values with the mode
+categorical_cols = full_df.select_dtypes(include=['object']).columns
+full_df[categorical_cols] = full_df[categorical_cols].fillna(full_df[categorical_cols].mode().iloc[0])
+
+# Check for missing values after handling
+print("\nMissing values after handling:")
+print(full_df.isnull().sum())
+
+# Save the cleaned dataset
+full_df.to_csv('cleaned_data.csv', index=False)
+
+
+#mean median stuff left
+#graphs and plots left
+#thresholds code by research left
