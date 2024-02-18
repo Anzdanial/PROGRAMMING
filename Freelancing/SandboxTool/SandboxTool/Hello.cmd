@@ -1,2 +1,2 @@
 @echo off
-echo Anas Asim | .\Program.exe > output.txt
+echo Garry Love | .\Hello.exe > output.txt

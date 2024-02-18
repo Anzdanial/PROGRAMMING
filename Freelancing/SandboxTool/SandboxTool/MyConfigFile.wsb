@@ -1,0 +1,14 @@
+﻿<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>C:\Anas's Data Win\REPOS\PROGRAMMING\Freelancing\SandboxTool\SandboxTool</HostFolder>
+            <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop</SandboxFolder>
+            <ReadOnly>True</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <Networking>True</Networking>
+    <AudioInput>True</AudioInput>
+    <VideoInput>True</VideoInput>
+    <VGpu>True</VGpu>
+    <LogonCommand></LogonCommand>
+</Configuration>
