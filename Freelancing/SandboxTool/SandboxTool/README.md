@@ -6,7 +6,7 @@ Getting Started
 
     Launching the Application: Double-click the executable file wsb to launch the Windows Sandbox Configuration Tool. Or Just Launch it from your powershell terminal.
 
-    User Interface Overview: The application interface consists of input fields, checkboxes, and buttons organized into sections for configuring sandbox settings, specifying logon commands, and executing sandbox configurations.
+    User Interface Overview: The application interface consists of input fields, checkboxes, and buttons organized into sections for configuring sandbox settings, and executing sandbox configurations.
 
 Configuration Settings
 Folder Mapping

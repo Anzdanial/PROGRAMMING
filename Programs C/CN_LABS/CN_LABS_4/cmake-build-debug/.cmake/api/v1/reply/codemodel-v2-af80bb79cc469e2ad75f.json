@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CN_LABS_4",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CN_LABS_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CN_LABS_4-Debug-fa64335bbe94e9f2e229.json",
+					"name" : "CN_LABS_4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/CN_LABS/CN_LABS_4/cmake-build-debug",
+		"source" : "/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/CN_LABS/CN_LABS_4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

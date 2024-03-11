@@ -1,0 +1,13 @@
+﻿<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder></HostFolder>
+            <SandboxFolder></SandboxFolder>
+            <ReadOnly>False</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <Networking>False</Networking>
+    <AudioInput>False</AudioInput>
+    <VideoInput>True</VideoInput>
+    <VGpu>False</VGpu>
+</Configuration>

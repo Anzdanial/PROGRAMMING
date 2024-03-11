@@ -1,0 +1,102 @@
+.Container{
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #e0e0e0; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+.Header{
+    order:1;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#ffffff;
+    background-color:#093F99;
+}
+
+.Nav{
+    order:3;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#ffffff;
+    background-color:#052559;
+}
+
+.Main{
+    order:2;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#ffffff;
+    background-color:#16A2C5;
+}
+
+.Aside{
+    order:4;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#ffffff;
+    background-color:#5474AD;
+}
+
+.Content{
+    order:2;
+}
+
+.Footer{
+    order:5;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#ffffff;
+    background-color:#052559;
+}
+
+@media only screen and (min-width: 600px){
+    .Container{
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: #e0e0e0; /* White background */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .Header{
+        width:100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color:#ffffff;
+        background-color:#093F99;
+    }
+
+    .Nav{
+        color:#ffffff;
+        background-color:#052559;
+    }
+
+    .Main{
+        width:75%;
+        color:#ffffff;
+        background-color:#16A2C5;
+    }
+
+    .Aside{
+        width:25%;
+        color:#ffffff;
+        background-color:#5474AD;
+    }
+
+    .Footer{
+        color:#ffffff;
+        background-color:#052559;
+    }
+}

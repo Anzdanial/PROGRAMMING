@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/nafeesdemo
+nafeesdemo.so
+nafeesdemo.dylib
+nafeesdemo.dll
+nafeesdemo.a
+nafeesdemo.lib
+nafeesdemo-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
