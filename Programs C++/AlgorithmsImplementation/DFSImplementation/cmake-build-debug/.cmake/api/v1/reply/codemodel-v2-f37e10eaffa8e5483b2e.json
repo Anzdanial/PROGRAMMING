@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DFSImplementation",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DFSImplementation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DFSImplementation-Debug-821ec4b1b71489a5302e.json",
+					"name" : "DFSImplementation",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C++/AlgorithmsImplementation/DFSImplementation/cmake-build-debug",
+		"source" : "/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C++/AlgorithmsImplementation/DFSImplementation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

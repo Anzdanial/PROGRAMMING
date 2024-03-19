@@ -1,0 +1,3 @@
+/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C++/AbstractDataTypes&Structures/Stack/cmake-build-debug/CMakeFiles/Stack.dir
+/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C++/AbstractDataTypes&Structures/Stack/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Anas's Data/REPOS/PROGRAMMING/Programs C++/AbstractDataTypes&Structures/Stack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
