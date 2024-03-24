@@ -1,0 +1,149 @@
+/* Add this to your style.css file */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #e9e9e9;
+    padding: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    display: block;
+}
+
+.call-to-action {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.call-to-action .btn {
+    background-color:#0056b3;
+}
+
+    .btn {
+        background-color: #004a99;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .btn:hover {
+        background-color: #003366;
+    }
+    
+    .stories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .story, .news-item {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+    
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 992px) {
+        .header-container,
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .navbar ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .main-container {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .navbar ul {
+            display: none; /* or use a hamburger menu */
+        }
+    
+        .navbar li {
+            padding: 10px 0;
+        }
+    }
