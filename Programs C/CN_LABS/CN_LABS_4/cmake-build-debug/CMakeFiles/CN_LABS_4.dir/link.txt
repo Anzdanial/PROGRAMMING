@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/CN_LABS_4.dir/main.c.o CMakeFiles/CN_LABS_4.dir/client.c.o -o CN_LABS_4 

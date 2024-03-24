@@ -1,3 +1,0 @@
-/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/CN_LABS/CN_LABS_4/cmake-build-debug/CMakeFiles/CN_LABS_4.dir
-/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/CN_LABS/CN_LABS_4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Anas's Data Win/REPOS/PROGRAMMING/Programs C/CN_LABS/CN_LABS_4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

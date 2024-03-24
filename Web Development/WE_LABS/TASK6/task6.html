@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        .parent{
-            width: 75%;
-            margin: auto;
-            border: 5px black;
-            border-style: solid;
+	<meta charset="UTF-8">
+	<title>Slot Machine</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            width: 60%;
+            margin: 50px auto;
+            border: 5px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        .numbers{
+
+        .number1, .number2, .number3 {
             display: inline-block;
-            border: 4px black;
-            border-style: solid;
-            padding: 10%;
-            margin: 2%;
+            border: 4px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 24px;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: #f8f8f8;
         }
-        .button{
+
+        .button {
+            border: none;
             border-radius: 25px;
             font-size: 25px;
-            width: 50px;
+            width: 150px;
+            padding: 15px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            transition: background-color 0.3s;
         }
-    </style>
+
+        .button:hover {
+            background-color: #45a049;
+        }
+	</style>
 </head>
 <body>
-    <div class="parent">
-        <div class="numbers">
-            number
-        </div>
-        <div class="numbers">
-            number
-        </div>
-        <div class="numbers">
-            number
-        </div>
-    </div>
-    <div style="text-align: center; padding: 5%">
-        <button onclick="spin()">SPIN</button>
-    </div>
-    <script>
+<div class="parent">
+	<div class="number1">PRESS SPIN</div>
+	<div class="number2">PRESS SPIN</div>
+	<div class="number3">PRESS SPIN</div>
+</div>
+<div style="text-align: center;">
+	<button class="button" onclick="spin()">SPIN</button>
+</div>
+<script>
+    function spin() {
+        var num1 = document.getElementsByClassName("number1")[0];
+        var num2 = document.getElementsByClassName("number2")[0];
+        var num3 = document.getElementsByClassName("number3")[0];
 
-    </script>
+        var rand1 = Math.floor(Math.random() * 8);
+        var rand2 = Math.floor(Math.random() * 8);
+        var rand3 = Math.floor(Math.random() * 8);
+
+        num1.innerHTML = rand1;
+        num2.innerHTML = rand2;
+        num3.innerHTML = rand3;
+
+        if (rand1 === rand2 && rand2 === rand3) {
+            alert("You win!");
+        } else {
+            alert("You lose!");
+        }
+    }
+</script>
 </body>
 </html>
