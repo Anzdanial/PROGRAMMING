@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/GeneticAlgorithm.dir/main.cpp.o -o GeneticAlgorithm  -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio 
