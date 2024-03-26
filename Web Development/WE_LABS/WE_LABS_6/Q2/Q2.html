@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Font Size Change</title>
+	<style>
+		.parent{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<p id="change">Font Size will be changed after clicking "Click Me!"</p>
+		<button onclick="changeFont()">Click Me!</button>
+	</div>
+</body>
+<script>
+    function changeFont(){
+        document.getElementById('change').style.fontSize = "40px";
+    }
+</script>
+</html>
+
+
+

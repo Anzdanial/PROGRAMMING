@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Click Turn on Button</title>
+	<style>
+        .parent {
+            text-align: center;
+            background-color: cadetblue;
+        }
+        /* Added CSS for button images */
+        .button img {
+            width: 50px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+	</style>
+</head>
+<body>
+<div class="parent">
+	<h1>Click turn on button</h1>
+	<h3>In this case Light will be on</h3>
+	<div class="bulb">
+		<img id="bulbImage" src="turnedOff.jpg" alt="Bulb">
+	</div>
+	<div class="button">
+		<img id="buttonImage" src="OffButton.png" alt="switchButton" onclick="switchButton()">
+	</div>
+</div>
+</body>
+<script>
+    function switchButton() {
+        var bulbImg = document.getElementById('bulbImage');
+        var buttonImg = document.getElementById('buttonImage');
+
+        if (bulbImg.src.endsWith('turnedOff.jpg')) {
+            bulbImg.src = 'turnedOn.jpg';
+            buttonImg.src = 'OnButton.png';
+        } else {
+            bulbImg.src = 'turnedOff.jpg';
+            buttonImg.src = 'OffButton.png';
+        }
+    }
+</script>
+</html>
